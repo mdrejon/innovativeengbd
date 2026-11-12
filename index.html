@@ -1,1796 +1,714 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Service &amp; Maintenance | Innovative Engineering — Lift &amp; Escalator
-      Solutions
-    </title>
+    <title>Innovative Engineering | Lift &amp; Escalator Installation, Repair &amp; Maintenance in Bangladesh</title>
     <meta
       name="description"
-      content="Innovative Engineering provides total lift and escalator solutions including monthly maintenance, emergency service, installation, and electrical products in Bangladesh."
+      content="Innovative Engineering supplies, installs, repairs and maintains lifts and escalators in Bangladesh — passenger, home, hospital and cargo lifts, spare parts and monthly servicing contracts."
     />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/logo/logo.png"
-    />
+    <meta name="theme-color" content="#123462" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="bn" href="index-bn.html" />
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png" />
 
-    <!-- Google Fonts -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Innovative Engineering — Lift &amp; Escalator Solutions" />
+    <meta property="og:description" content="New lift installation, repair, monthly maintenance and spare parts supply across Bangladesh." />
+    <meta property="og:image" content="assets/images/lift/hero-glass-lift.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=Archivo:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Swiper CSS (for hero slider) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Innovative Engineering",
+        "description": "Total solution for lifts and escalators — installation, repair, maintenance and spare parts.",
+        "image": "assets/images/logo/logo.png",
+        "telephone": ["+8801714216666", "+8801829984722"],
+        "email": "palash_pe@yahoo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Barik Building, 10 Sk. Mujib Road (2nd Floor), Agrabad C/A",
+          "addressLocality": "Chattogram",
+          "addressCountry": "BD"
+        },
+        "openingHours": "Mo-Su 00:00-23:59"
+      }
+    </script>
   </head>
 
   <body>
-    <!-- PRELOADER -->
-    <div id="ie-load">
-      <div class="ld-dots">
-        <span></span><span></span><span></span><span></span>
+    <!-- LOADER — lift arrives at ground floor, doors open -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__door loader__door--l"></div>
+      <div class="loader__door loader__door--r"></div>
+      <div class="loader__panel">
+        <img src="assets/images/logo/logo.png" alt="" />
+        <div class="loader__display"><i class="fas fa-caret-down"></i><span id="loaderFloor">5</span></div>
       </div>
     </div>
 
-    <!-- OFFCANVAS OVERLAY -->
-    <div class="oc-overlay" id="ocOverlay"></div>
-
-    <!-- OFFCANVAS PANEL (Mobile) -->
-    <nav class="oc-panel" id="ocPanel" aria-label="Mobile navigation">
-      <div class="oc-head">
-        <a href="#hero"
-          ><img src="assets/images/logo/logo.png" alt="Innovative Engineering"
-        /></a>
-        <button class="oc-close" id="ocClose">
-          <i class="fas fa-times"></i>
-        </button>
+    <!-- ================= HEADER ================= -->
+    <header class="hdr" id="hdr">
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar__info">
+            <a href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i>01714-216666</a>
+            <a href="mailto:palash_pe@yahoo.com" data-link="email"><i class="fas fa-envelope"></i>palash_pe@yahoo.com</a>
+            <span><i class="fas fa-location-dot"></i>Agrabad, Chattogram · Malibag, Dhaka</span>
+          </div>
+          <div class="topbar__right">
+            <span class="topbar__live">24/7 Emergency Service</span>
+            <div class="lang" aria-label="Language">
+              <a href="index.html" class="is-active" lang="en">EN</a>
+              <a href="index-bn.html" lang="bn">বাংলা</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="oc-nav" id="ocNav">
-        <li><a href="#hero" data-section="hero">Home</a></li>
-        <li><a href="#about" data-section="about">About</a></li>
-        <li><a href="#services" data-section="services">Services</a></li>
-        <li>
-          <a href="#maintenance-checklist" data-section="maintenance-checklist"
-            >Maintenance</a
-          >
-        </li>
-        <li><a href="#products" data-section="products">Products</a></li>
-        <li><a href="#contact" data-section="contact">Contact</a></li>
+
+      <div class="nav">
+        <div class="container">
+          <a href="#home" class="brand" aria-label="Innovative Engineering — home">
+            <img src="assets/images/logo/logo.png" alt="Innovative Engineering logo" width="52" height="52" />
+            <span class="brand__txt"><strong>Innovative Engineering</strong><small>Lift &amp; Escalator Solutions</small></span>
+          </a>
+
+          <nav aria-label="Main menu">
+            <ul class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#projects">Our Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav__cta">
+            <a href="#contact" class="btn btn--sm"><i class="fas fa-paper-plane"></i> Get a Quote</a>
+            <a href="index-bn.html" class="lang-m" lang="bn" aria-label="বাংলায় দেখুন">বাংলা</a>
+            <button class="ham" id="ham" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mMenu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+
+    <!-- Mobile menu (opened by ☰) -->
+    <nav class="m-menu" id="mMenu" aria-label="Mobile menu">
+      <ul>
+        <li><a href="#home" style="--i: 0"><i class="fas fa-house"></i>Home</a></li>
+        <li><a href="#about" style="--i: 1"><i class="fas fa-building"></i>About Us</a></li>
+        <li><a href="#services" style="--i: 2"><i class="fas fa-screwdriver-wrench"></i>Services</a></li>
+        <li><a href="#products" style="--i: 3"><i class="fas fa-elevator"></i>Products</a></li>
+        <li><a href="#projects" style="--i: 4"><i class="fas fa-images"></i>Our Works</a></li>
+        <li><a href="#contact" style="--i: 5"><i class="fas fa-phone"></i>Contact</a></li>
       </ul>
-      <div class="oc-cta">
-        <p>
-          <i class="fas fa-phone"></i
-          ><a href="tel:+8801714216666">01714-216666</a>
-        </p>
-        <p>
-          <i class="fas fa-phone"></i
-          ><a href="tel:+8801829984722">01829-984722</a>
-        </p>
-        <p>
-          <i class="fas fa-envelope"></i
-          ><a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
-        </p>
+      <div class="m-menu__foot">
+        <a href="tel:+8801714216666" class="btn btn--navy btn--block" data-link="call"><i class="fas fa-phone"></i> Call 01714-216666</a>
+        <a href="https://wa.me/8801714216666" class="btn btn--wa btn--block" data-link="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <div class="lang">
+          <a href="index.html" class="is-active" lang="en">EN</a>
+          <a href="index-bn.html" lang="bn">বাংলা</a>
+        </div>
       </div>
     </nav>
 
-    <!-- ============================================================
-         HEADER — SPA Navigation
-    ============================================================ -->
-    <header id="hdr">
-      <div class="hdr-inner">
-        <a href="#hero" class="hdr-logo spa-link" data-section="hero">
-          <img src="assets/images/logo/logo.png" alt="Innovative Engineering" />
-        </a>
-
-        <nav class="spa-nav" aria-label="Primary navigation">
-          <ul id="spaMenu">
-            <li><a href="#hero" data-section="hero" class="active">Home</a></li>
-            <li><a href="#about" data-section="about">About</a></li>
-            <li><a href="#services" data-section="services">Services</a></li>
-            <li>
-              <a
-                href="#maintenance-checklist"
-                data-section="maintenance-checklist"
-                >Maintenance</a
-              >
-            </li>
-            <li><a href="#products" data-section="products">Products</a></li>
-            <li><a href="#contact" data-section="contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="hdr-actions">
-          <div class="lang-switch">
-            <a href="index.html" class="active">EN</a>
-            <span>|</span>
-            <a href="index-bn.html">BN</a>
-          </div>
-          <a href="#contact" class="btn-quote spa-link" data-section="contact">Get a Quote</a>
-          <button class="ham-btn" id="hamBtn" aria-label="Open menu">
-            <span></span><span></span><span></span>
-          </button>
+    <main>
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero" data-floor="G" data-name="Home">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="slide is-active" style="background-image: url('assets/images/lift/hero-glass-lift.jpg')"></div>
+          <div class="slide" data-bg="assets/images/lift/hero-lift-lobby.jpg"></div>
+          <div class="slide" data-bg="assets/images/lift/hero-escalator.jpg"></div>
         </div>
-      </div>
-    </header>
+        <div class="hero__grid" aria-hidden="true"></div>
 
-    <!-- ============================================================
-         HERO SLIDER
-    ============================================================ -->
-    <section id="hero" class="hero-slider-section">
-      <div class="swiper hero-swiper" id="heroSwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div
-              class="slide-img"
-              style="
-                background-image: url(&quot;assets/images/lift/hero-elevator.jpg&quot;);
-              "
-            ></div>
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-              <div class="container">
-                <div class="slide-text">
-                  <div class="slide-badge">
-                    Total Lift &amp; Escalator Solutions
-                  </div>
-                  <h1 class="slide-title">
-                    Expert Lift <span>Maintenance</span><br />
-                    You Can Trust
-                  </h1>
-                  <p class="slide-desc">
-                    Professional monthly maintenance, emergency service, and
-                    complete elevator solutions in Bangladesh — operating 24/7,
-                    365 days a year.
-                  </p>
-                  <div class="slide-btns">
-                    <a
-                      href="#maintenance-checklist"
-                      class="btn-primary spa-link"
-                      data-section="maintenance-checklist"
-                    >
-                      <i class="fas fa-clipboard-check"></i> View Maintenance
-                      List
-                    </a>
-                    <a
-                      href="#contact"
-                      class="btn-outline-w spa-link"
-                      data-section="contact"
-                    >
-                      <i class="fas fa-phone"></i> Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div
-              class="slide-img"
-              style="
-                background-image: url(&quot;assets/images/lift/lobby.jpg&quot;);
-              "
-            ></div>
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-              <div class="container">
-                <div class="slide-text">
-                  <div class="slide-badge">
-                    Emergency Service — 30 Min Response
-                  </div>
-                  <h1 class="slide-title">
-                    <span>24/7</span> Emergency<br />
-                    Lift Service
-                  </h1>
-                  <p class="slide-desc">
-                    We arrive on-site within 30 minutes of your call. Year-round
-                    emergency response for lifts and escalators of all brands
-                    and models.
-                  </p>
-                  <div class="slide-btns">
-                    <a href="tel:+8801714216666" class="btn-primary">
-                      <i class="fas fa-phone"></i> Call Now: 01714-216666
-                    </a>
-                    <a
-                      href="https://wa.me/8801714216666?text=Emergency!+I+need+urgent+lift+service"
-                      target="_blank"
-                      class="btn-outline-w"
-                    >
-                      <i class="fab fa-whatsapp"></i> WhatsApp Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div
-              class="slide-img"
-              style="
-                background-image: url(&quot;assets/images/lift/maintenance.jpg&quot;);
-              "
-            ></div>
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-              <div class="container">
-                <div class="slide-text">
-                  <div class="slide-badge">
-                    Skilled Engineers &amp; Technicians
-                  </div>
-                  <h1 class="slide-title">
-                    Professional
-                    <span>Inspection &amp;</span><br />
-                    Servicing
-                  </h1>
-                  <p class="slide-desc">
-                    Our certified engineers perform thorough monthly inspections
-                    of all mechanical, electrical, and safety systems — fully
-                    documented and reported.
-                  </p>
-                  <div class="slide-btns">
-                    <a
-                      href="#services"
-                      class="btn-primary spa-link"
-                      data-section="services"
-                    >
-                      <i class="fas fa-cogs"></i> Our Services
-                    </a>
-                    <a
-                      href="#about"
-                      class="btn-outline-w spa-link"
-                      data-section="about"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="swiper-slide">
-            <div
-              class="slide-img"
-              style="
-                background-image: url(&quot;assets/images/lift/hero-building.jpg&quot;);
-              "
-            ></div>
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-              <div class="container">
-                <div class="slide-text">
-                  <div class="slide-badge">
-                    Korean · Italian · Chinese Brands
-                  </div>
-                  <h1 class="slide-title">
-                    New Lift
-                    <span>Installation</span><br />
-                    &amp; Supply
-                  </h1>
-                  <p class="slide-desc">
-                    We supply and install lifts from leading international
-                    brands — along with spare parts, stabilizers, UPS systems,
-                    generators, and electrical goods.
-                  </p>
-                  <div class="slide-btns">
-                    <a
-                      href="#products"
-                      class="btn-primary spa-link"
-                      data-section="products"
-                    >
-                      <i class="fas fa-boxes"></i> View Products
-                    </a>
-                    <a
-                      href="#contact"
-                      class="btn-outline-w spa-link"
-                      data-section="contact"
-                    >
-                      Get a Quote
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end swiper-wrapper -->
-      </div>
-
-      <!-- Hero Nav Buttons -->
-      <div class="hero-nav">
-        <button class="hero-nav-btn" id="heroPrev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="hero-nav-btn" id="heroNext">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-
-      <!-- Slide Counter -->
-      <div class="slide-counter">
-        <span class="cur" id="slideNum">01</span> / 04
-      </div>
-
-      <!-- Stats Bar -->
-      <div class="hero-stats-bar">
-        <div class="hs-item">
-          <i class="fas fa-clock hs-icon"></i>
-          <div>
-            <div class="hs-num">24/7</div>
-            <div class="hs-lbl">Emergency Service</div>
-          </div>
-        </div>
-        <div class="hs-item">
-          <i class="fas fa-bolt hs-icon"></i>
-          <div>
-            <div class="hs-num">30 min</div>
-            <div class="hs-lbl">Response Time</div>
-          </div>
-        </div>
-        <div class="hs-item">
-          <i class="fas fa-elevator hs-icon"></i>
-          <div>
-            <div class="hs-num">100+</div>
-            <div class="hs-lbl">Lifts Maintained</div>
-          </div>
-        </div>
-        <div class="hs-item">
-          <i class="fas fa-award hs-icon"></i>
-          <div>
-            <div class="hs-num">15+</div>
-            <div class="hs-lbl">Years Experience</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         ABOUT
-    ============================================================ -->
-    <section id="about" class="sec-pad" style="background: #fff">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-img-stack">
-            <div class="about-img-main">
-              <img
-                src="assets/images/lift/escalator.jpg"
-                alt="Modern escalator"
-                loading="lazy"
-              />
-            </div>
-            <div class="about-img-sub">
-              <img
-                src="assets/images/lift/control-panel.jpg"
-                alt="Lift control panel"
-                loading="lazy"
-              />
-            </div>
-            <div class="exp-badge">
-              <div class="big">15+</div>
-              <div class="lbl">Years of Excellence</div>
-            </div>
-          </div>
-
-          <div>
-            <div class="sec-label">About Innovative Engineering</div>
-            <h2 class="sec-title">Total Solution for Lifts &amp; Escalators</h2>
-            <p>
-              Innovative Engineering is your trusted partner for comprehensive
-              lift and escalator maintenance, installation, and emergency
-              services across Bangladesh. We are headquartered at Barik
-              Building, 10 Sk. Mujib Road (2nd Floor), Agrabad C/A, Chittagong.
-            </p>
-            <p>
-              Our skilled engineers and technicians ensure every lift operates
-              safely and efficiently through expert management, thorough
-              inspections, and timely performance monitoring.
-            </p>
-            <div class="about-features">
-              <div class="feat-item">
-                <div class="feat-ico">
-                  <i class="fas fa-calendar-check"></i>
-                </div>
-                <div class="feat-txt">
-                  <h6>Monthly Routine Service</h6>
-                  <p>
-                    Scheduled check-ups, half-yearly servicing, and
-                    supply/repair of all lift parts.
-                  </p>
-                </div>
-              </div>
-              <div class="feat-item">
-                <div class="feat-ico"><i class="fas fa-bolt"></i></div>
-                <div class="feat-txt">
-                  <h6>30-Minute Emergency Response</h6>
-                  <p>
-                    We arrive on-site within 30 minutes of your call — 24 hours,
-                    365 days a year.
-                  </p>
-                </div>
-              </div>
-              <div class="feat-item">
-                <div class="feat-ico"><i class="fas fa-shield-alt"></i></div>
-                <div class="feat-txt">
-                  <h6>Safety Compliance &amp; Documentation</h6>
-                  <p>
-                    All mechanical, electrical, and safety devices inspected and
-                    recorded monthly.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         SERVICES
-    ============================================================ -->
-    <section id="services" class="sec-pad services-section">
-      <div class="container">
-        <div style="text-align: center; max-width: 600px; margin: 0 auto 0">
-          <div class="sec-label" style="justify-content: center">
-            What We Offer
-          </div>
-          <h2 class="sec-title">Our Core Services</h2>
-          <p class="sec-desc">
-            Complete service packages keeping your lifts safe, reliable, and
-            running efficiently all year round.
-          </p>
-        </div>
-
-        <div class="svc-grid">
-          <!-- Card 1 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/maintenance.jpg"
-                alt="Monthly Maintenance"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-calendar-check"></i></div>
-              <h4>Monthly Maintenance</h4>
-              <p>
-                Complete monthly routine inspection of all mechanical,
-                electrical, and safety components — documented and reported to
-                the client.
-              </p>
-              <span class="svc-tag">Scheduled &#8594;</span>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/lobby.jpg"
-                alt="Emergency Service"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-ambulance"></i></div>
-              <h4>Emergency Service</h4>
-              <p>
-                24/7 emergency support with guaranteed on-site arrival within 30
-                minutes of your call. Service available 365 days a year.
-              </p>
-              <span class="svc-tag">24/7 Available &#8594;</span>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/control-panel.jpg"
-                alt="Repair & Servicing"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-cogs"></i></div>
-              <h4>Routine Repair &amp; Servicing</h4>
-              <p>
-                Half-yearly full servicing, emergency repair, and annual
-                maintenance including supply of all types of lift and escalator
-                spare parts.
-              </p>
-              <span class="svc-tag">All Brands &#8594;</span>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/hero-elevator.jpg"
-                alt="Lift Installation"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-hard-hat"></i></div>
-              <h4>Lift Installation</h4>
-              <p>
-                Installation of new lifts including Korean/Italian main motor
-                clone lifts and Chinese brand new lifts for residential and
-                commercial buildings.
-              </p>
-              <span class="svc-tag">New Installation &#8594;</span>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/escalator.jpg"
-                alt="Safety Inspection"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-search"></i></div>
-              <h4>Safety Inspection</h4>
-              <p>
-                Thorough safety inspections of guide rails, ropes, safety
-                brakes, door mechanisms, and control systems. Certified
-                inspection reports provided.
-              </p>
-              <span class="svc-tag">Certified &#8594;</span>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="svc-card">
-            <div class="svc-img">
-              <img
-                src="assets/images/lift/building-night.jpg"
-                alt="Electrical Products"
-                loading="lazy"
-              />
-            </div>
-            <div class="svc-body">
-              <div class="svc-ico"><i class="fas fa-plug"></i></div>
-              <h4>Electrical &amp; Power Products</h4>
-              <p>
-                Supply of stabilizers (AVS/AIVS), UPS systems, IPS, inverters,
-                transformers, circuit breakers, generators (20KW–1250KW), and
-                sub-stations.
-              </p>
-              <span class="svc-tag">View Products &#8594;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         MAINTENANCE CHECKLIST
-    ============================================================ -->
-    <section id="maintenance-checklist" class="sec-pad checklist-section">
-      <div class="container">
-        <div class="sec-label">Monthly Inspection</div>
-        <h2 class="sec-title">Monthly Maintenance List</h2>
-        <p class="sec-desc" style="max-width: 640px">
-          Our certified technicians perform the following comprehensive checks
-          every month on every maintained lift — covering five key areas of the
-          lift system.
-        </p>
-
-        <div class="tab-nav" role="tablist">
-          <button class="tab-btn on" onclick="showTab('shaft', this)">
-            <i class="fas fa-layer-group"></i> Shaft Work
-          </button>
-          <button class="tab-btn" onclick="showTab('landing', this)">
-            <i class="fas fa-door-open"></i> Landing Door
-          </button>
-          <button class="tab-btn" onclick="showTab('cabin', this)">
-            <i class="fas fa-cube"></i> Cabin &amp; Door
-          </button>
-          <button class="tab-btn" onclick="showTab('machine', this)">
-            <i class="fas fa-industry"></i> Machine Room
-          </button>
-          <button class="tab-btn" onclick="showTab('others', this)">
-            <i class="fas fa-ellipsis-h"></i> Others
-          </button>
-        </div>
-
-        <!-- SHAFT -->
-        <div class="tab-content on" id="tc-shaft">
-          <div class="cl-wrap">
-            <div class="cl-head">
-              <i class="fas fa-layer-group"></i>
-              <h5>Shaft Interior Work — 10 Inspection Points</h5>
-            </div>
-            <table class="cl-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Inspection Task</th>
-                  <th style="width: 60px; text-align: center">Done</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Check whether main and counter guide rail oil levels are
-                    correct, re-oil if needed, and verify rack plates are in
-                    place.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    Check if every traction rope has equal and correct tension.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Check if all flexible cables are in normal condition.</td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Check if the speed governor rope tension is correct.</td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>
-                    Check if the preliminary and final limit switches operate
-                    correctly.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    Check that all safety work and magnetic bar positions are
-                    correct.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    Check if shaft lighting, buzzer, and pit area are clean and
-                    working.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>
-                    Check if the counter weight is making any abnormal noise.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>
-                    Check if counter weight rollers from top to bottom are tight
-                    and properly mounted.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Check if the main guide shoe is in correct condition.</td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- LANDING -->
-        <div class="tab-content" id="tc-landing">
-          <div class="cl-wrap">
-            <div class="cl-head">
-              <i class="fas fa-door-open"></i>
-              <h5>Landing Door Work — 4 Inspection Points</h5>
-            </div>
-            <table class="cl-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Inspection Task</th>
-                  <th style="width: 60px; text-align: center">Done</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Check if the landing door mechanical and electrical contacts
-                    are in normal operating condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    Check if door seals are clean and in normal working
-                    condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                    Check if landing door hanger rollers and opening rollers are
-                    correctly adjusted.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    Check if landing door wired rope, door lock, and door closer
-                    are in correct condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- CABIN -->
-        <div class="tab-content" id="tc-cabin">
-          <div class="cl-wrap">
-            <div class="cl-head">
-              <i class="fas fa-cube"></i>
-              <h5>Cabin &amp; Cabin Door — 10 Inspection Points</h5>
-            </div>
-            <table class="cl-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Inspection Task</th>
-                  <th style="width: 60px; text-align: center">Done</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Check if the emergency brake and releasing rod are in normal
-                    working condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    Check if guide shoes are clean and if there is sufficient
-                    oil on the oiling pad.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>
-                    Check if the emergency brake and releasing rod operate
-                    normally.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    Check if the photoelectric cell is functioning correctly.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Check if the cabin seals are clean.</td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    Check if the door motor and motor gear are operating
-                    normally. Check gear oil level and lubrication.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    Check if door contacts and contact pins are electrically
-                    connected properly.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>
-                    Check if the door C.P.U. camera view is clear and camera
-                    roller is in correct position.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>
-                    Check if the cabin door guide shoe and roller are in correct
-                    condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>
-                    In case of power failure, test the emergency battery
-                    function inside the cabin.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- MACHINE ROOM -->
-        <div class="tab-content" id="tc-machine">
-          <div class="cl-wrap">
-            <div class="cl-head">
-              <i class="fas fa-industry"></i>
-              <h5>Machine Room — 7 Inspection Points</h5>
-            </div>
-            <table class="cl-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Inspection Task</th>
-                  <th style="width: 60px; text-align: center">Done</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Check if the control box interior and exterior parts are
-                    clean.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    Check if the gear oil level and quality (viscosity) are
-                    within correct specifications.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Check if the gear oil-seal is leaking oil.</td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>
-                    Check if the main motor and gear make any abnormal noise
-                    during operation.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>
-                    Check if the over speed governor is clean and lubricated
-                    where necessary.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>
-                    Check if the speed governor roller is in correct condition.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>
-                    Check if emergency caller indicator, intercom, and buzzer
-                    operate correctly (especially in case of power failure).
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- OTHERS -->
-        <div class="tab-content" id="tc-others">
-          <div class="cl-wrap">
-            <div class="cl-head">
-              <i class="fas fa-ellipsis-h"></i>
-              <h5>Others — 2 Inspection Points</h5>
-            </div>
-            <table class="cl-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Inspection Task</th>
-                  <th style="width: 60px; text-align: center">Done</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    Check if every cabin and landing floor operation is
-                    functioning correctly.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>
-                    Check if the cabin and every door outer floor indicator is
-                    displaying correctly.
-                  </td>
-                  <td style="text-align: center">
-                    <span class="chk" onclick="toggleChk(this)"
-                      ><i class="fas fa-check"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         EMERGENCY BANNER
-    ============================================================ -->
-    <section class="emergency-sec">
-      <div class="container">
-        <div class="em-inner">
-          <div class="em-text">
-            <h3>
-              <i
-                class="fas fa-exclamation-triangle"
-                style="margin-right: 10px"
-              ></i
-              >Emergency Lift Service — Available 24/7
-            </h3>
-            <p>
-              We arrive on-site within <strong>30 minutes</strong> of your call
-              — any time, any day of the year.
-            </p>
-          </div>
-          <div class="em-btns">
-            <a href="tel:+8801714216666" class="btn-white"
-              ><i class="fas fa-phone"></i> 01714-216666</a
-            >
-            <a
-              href="https://wa.me/8801714216666?text=Emergency!+I+need+urgent+lift+service"
-              target="_blank"
-              class="btn-dark-out"
-              ><i class="fab fa-whatsapp"></i> WhatsApp Us</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         PRODUCTS
-    ============================================================ -->
-    <section id="products" class="sec-pad products-sec">
-      <div class="container">
-        <div style="max-width: 600px">
-          <div class="sec-label">What We Supply</div>
-          <h2 class="sec-title lt">Our Products</h2>
-          <p class="sec-desc lt">
-            Comprehensive range of lifts, spare parts, and electrical products
-            from leading international brands.
-          </p>
-        </div>
-
-        <div class="prod-grid">
-          <div class="prod-card">
-            <div class="prod-num">01</div>
-            <div class="prod-info">
-              <h6>Korean / Italian Brand Clone Lifts</h6>
-              <p>
-                Main motor clone lifts with Korean and Italian technology for
-                reliable, long-lasting performance.
-              </p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-num">02</div>
-            <div class="prod-info">
-              <h6>Ready-Made Lift Spare Parts (Retail)</h6>
-              <p>
-                Comprehensive stock of spare parts for all major lift brands —
-                available for immediate retail purchase.
-              </p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-num">03</div>
-            <div class="prod-info">
-              <h6>Chinese Brand New Lifts</h6>
-              <p>
-                Brand new lifts from reputable Chinese manufacturers —
-                cost-effective for residential and commercial use.
-              </p>
-            </div>
-          </div>
-          <div class="prod-card">
-            <div class="prod-num">04</div>
-            <div class="prod-info">
-              <h6>Electrical Power Equipment</h6>
-              <p>
-                Full range of electrical products: stabilizers, UPS systems,
-                IPS, inverters, generators, transformers, and more.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="elec-list">
-          <h5><i class="fas fa-bolt"></i> Electrical Products We Carry</h5>
-          <div class="elec-grid">
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> AVS/AIVS 1KVA–500KVA
-              Stabilizer
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> Off-Line UPS 1KVA–500KVA /
-              3000VA
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> On-Line UPS 650VA–3000VA
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> IPS 400VA–20KVA
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> AC/DC Inverter 1KW–50KW
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> All Types of Transformers
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> All Types of Switch Sockets
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> All Types of CFL Energy Bulbs
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> All Types of Circuit Breakers
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> All Types HTLT PFI Panel
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> Generator 20KW–1250KW
-            </div>
-            <div class="elec-item">
-              <i class="fas fa-check-circle"></i> Sub-station 100KVA–2000KVA
-            </div>
-          </div>
-        </div>
-        <p
-          style="
-            color: rgba(255, 255, 255, 0.45);
-            font-size: 13px;
-            margin-top: 18px;
-            text-align: center;
-          "
-        >
-          <i
-            class="fas fa-info-circle"
-            style="color: var(--primary); margin-right: 6px"
-          ></i>
-          Lifts of any brand are maintained and serviced by our skilled
-          engineers and technicians.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CONTACT
-    ============================================================ -->
-    <section id="contact" class="sec-pad contact-sec">
-      <div class="container">
-        <div style="text-align: center; max-width: 600px; margin: 0 auto">
-          <div class="sec-label" style="justify-content: center">
-            Get In Touch
-          </div>
-          <h2 class="sec-title">Contact Us Today</h2>
-          <p class="sec-desc">
-            Have a question or need a service quote? Reach out and our team will
-            respond within minutes.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="form-box">
-            <h4>Send Us a Message</h4>
-            <div class="f-success" id="mfSuccess">
-              <i class="fas fa-check-circle"></i> Thank you! We'll get back to
-              you shortly.
-            </div>
-            <form onsubmit="doForm(event, 'mfSuccess')">
-              <div class="f-row">
-                <div class="f-grp">
-                  <label for="mfName">Full Name *</label
-                  ><input
-                    type="text"
-                    id="mfName"
-                    placeholder="Your full name"
-                    required
-                  />
-                </div>
-                <div class="f-grp">
-                  <label for="mfPhone">Phone *</label
-                  ><input
-                    type="tel"
-                    id="mfPhone"
-                    placeholder="01XXXXXXXXX"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="f-grp">
-                <label for="mfEmail">Email</label
-                ><input
-                  type="email"
-                  id="mfEmail"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div class="f-grp">
-                <label for="mfService">Service Type</label>
-                <select id="mfService">
-                  <option value="">Select a service...</option>
-                  <option>Monthly Maintenance Contract</option>
-                  <option>Emergency Repair</option>
-                  <option>Lift Installation</option>
-                  <option>Annual Service Contract</option>
-                  <option>Electrical Products</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="f-grp">
-                <label for="mfMsg">Message *</label
-                ><textarea
-                  id="mfMsg"
-                  placeholder="Describe your requirement..."
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn-send">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-            </form>
-          </div>
-
-          <div class="info-stack">
-            <div class="info-card">
-              <div class="info-ico"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="info-txt">
-                <h6>Head Office</h6>
-                <p>
-                  Barik Building, 10 Sk. Mujib Road (2nd Floor), Agrabad C/A,
-                  Chittagong
-                </p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="info-ico"><i class="fas fa-building"></i></div>
-              <div class="info-txt">
-                <h6>Branch Office</h6>
-                <p>63/1 VIP Road, Malibag, Dhaka-1217</p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="info-ico"><i class="fas fa-phone"></i></div>
-              <div class="info-txt">
-                <h6>Phone</h6>
-                <p>
-                  <a href="tel:+8801714216666">01714-216666</a> &nbsp;|&nbsp;
-                  <a href="tel:+8801829984722">01829-984722</a>
-                </p>
-              </div>
-            </div>
-            <div class="info-card">
-              <div class="info-ico"><i class="fas fa-envelope"></i></div>
-              <div class="info-txt">
-                <h6>Email</h6>
-                <p>
-                  <a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
-                </p>
-              </div>
-            </div>
-            <a
-              href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+your+services."
-              target="_blank"
-              class="wa-cta-block"
-            >
-              <i class="fab fa-whatsapp"></i>
-              <div>
-                <strong>Chat on WhatsApp</strong
-                ><span>Quick response — we're usually online!</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         FOOTER
-    ============================================================ -->
-    <footer class="site-footer" id="colophon">
-      <div class="ft-top">
-        <div class="container">
-          <div class="ft-grid">
-            <div class="ft-brand">
-              <a href="#hero"
-                ><img
-                  src="assets/images/logo/logo.png"
-                  alt="Innovative Engineering"
-              /></a>
-              <p>
-                Total Solution for Lifts &amp; Escalators. Professional
-                maintenance, emergency service, and complete lift solutions
-                throughout Bangladesh.
-              </p>
-              <div class="ft-socials">
-                <a href="#" class="soc-btn"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="soc-btn"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="soc-btn"><i class="fab fa-youtube"></i></a>
-                <a
-                  href="https://wa.me/8801714216666"
-                  target="_blank"
-                  class="soc-btn"
-                  ><i class="fab fa-whatsapp"></i
-                ></a>
-              </div>
-            </div>
-
-            <div class="ft-widget">
-              <h6>Contact Information</h6>
-              <div class="ft-ci">
-                <i class="fas fa-map-marker-alt"></i
-                ><span
-                  >Barik Building, 10 Sk. Mujib Road (2nd Fl.), Agrabad C/A,
-                  Chittagong</span
+        <div class="hero__main">
+          <div class="container">
+            <div>
+              <div class="hero__badge" data-reveal="up"><i class="fas fa-shield-halved"></i> Total Lift &amp; Escalator Solutions</div>
+              <h1 data-reveal="up" style="--d: 0.1s">
+                Safe, Smooth &amp; Reliable <span class="accent">Lifts and Escalators</span>
+              </h1>
+              <p class="hero__rotator" data-reveal="up" style="--d: 0.2s">
+                We
+                <span
+                  class="rotator"
+                  data-words='["install new lifts","repair &amp; service old lifts","maintain lifts every month","supply genuine spare parts","install escalators"]'
+                  ><span>install new lifts</span></span
                 >
-              </div>
-              <div class="ft-ci">
-                <i class="fas fa-building"></i
-                ><span>63/1 VIP Road, Malibag, Dhaka-1217</span>
-              </div>
-              <div class="ft-ci">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <a href="tel:+8801714216666">01714-216666</a><br /><a
-                    href="tel:+8801829984722"
-                    >01829-984722</a
-                  >
-                </div>
-              </div>
-              <div class="ft-ci">
-                <i class="fas fa-envelope"></i
-                ><a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
+                for homes, offices, hospitals and malls across Bangladesh.
+              </p>
+              <ul class="hero__chips" data-reveal="up" style="--d: 0.3s">
+                <li><i class="fas fa-elevator"></i>New lift installation</li>
+                <li><i class="fas fa-screwdriver-wrench"></i>Lift repair &amp; servicing</li>
+                <li><i class="fas fa-calendar-check"></i>Monthly maintenance</li>
+                <li><i class="fas fa-gears"></i>Spare parts supply</li>
+              </ul>
+              <div class="hero__btns" data-reveal="up" style="--d: 0.4s">
+                <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Contact Us</a>
+                <a href="tel:+8801714216666" class="btn btn--ghost" data-link="call"><i class="fas fa-phone"></i> 01714-216666</a>
               </div>
             </div>
 
-            <div class="ft-widget">
-              <h6>Quick Links</h6>
-              <ul class="ft-links">
-                <li><a onclick="scrollToSec('hero')">Home</a></li>
-                <li><a onclick="scrollToSec('about')">About Us</a></li>
-                <li><a onclick="scrollToSec('services')">Our Services</a></li>
-                <li>
-                  <a onclick="scrollToSec('maintenance-checklist')"
-                    >Maintenance List</a
-                  >
-                </li>
-                <li><a onclick="scrollToSec('products')">Products</a></li>
-                <li><a onclick="scrollToSec('contact')">Contact Us</a></li>
+            <!-- Animated lift shaft -->
+            <div class="shaft-wrap" aria-hidden="true">
+              <div class="shaft" data-reveal="zoom" style="--d: 0.35s">
+                <div class="shaft__display"><i id="liftArrow" class="fas fa-caret-up is-idle"></i><span id="liftFloor">G</span></div>
+                <div class="shaft__body">
+                  <ul class="shaft__floors">
+                    <li><span>5</span></li>
+                    <li><span>4</span></li>
+                    <li><span>3</span></li>
+                    <li><span>2</span></li>
+                    <li><span>1</span></li>
+                    <li><span>G</span></li>
+                  </ul>
+                  <div class="shaft__rail shaft__rail--l"></div>
+                  <div class="shaft__rail shaft__rail--r"></div>
+                  <div class="shaft__cw"></div>
+                  <div class="shaft__car" id="liftCar">
+                    <div class="shaft__cabin">
+                      <i class="fas fa-user-group"></i>
+                      <div class="shaft__door shaft__door--l"></div>
+                      <div class="shaft__door shaft__door--r"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shaft__base"></div>
+                <p class="shaft__caption">Smooth ride · Precise levelling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__stats">
+          <div class="container">
+            <div class="stat"><i class="fas fa-clock"></i><div><strong>24/7</strong><span>Emergency service</span></div></div>
+            <div class="stat"><i class="fas fa-bolt"></i><div><strong data-count="30" data-suffix=" min">30 min</strong><span>Response time</span></div></div>
+            <div class="stat"><i class="fas fa-elevator"></i><div><strong data-count="100" data-suffix="+">100+</strong><span>Lifts maintained</span></div></div>
+            <div class="stat"><i class="fas fa-award"></i><div><strong data-count="15" data-suffix="+">15+</strong><span>Years of experience</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="sec" data-floor="1" data-name="About Us">
+        <div class="container about-grid">
+          <div class="about-media" data-reveal="left">
+            <div class="about-media__main door-reveal">
+              <img src="assets/images/lift/lift-interior-classic.jpg" alt="Modern escalator installed in a commercial building" loading="lazy" />
+            </div>
+            <div class="about-media__sub door-reveal" style="--d: 0.25s">
+              <img src="assets/images/lift/lift-call-button.jpg" alt="Lift control panel" loading="lazy" />
+            </div>
+            <div class="about-badge">
+              <strong data-count="15" data-suffix="+">15+</strong>
+              <span>Years of<br />excellence</span>
+            </div>
+          </div>
+
+          <div data-reveal="right">
+            <span class="floor-tag"><b>01</b> About Us</span>
+            <h2 class="sec-title">Your Trusted Partner for <span>Lifts &amp; Escalators</span></h2>
+            <p class="sec-desc">
+              Innovative Engineering is a complete lift and escalator company. We sell and install new lifts, repair
+              old ones, maintain them every month and supply spare parts — so building owners only need one
+              trusted team.
+            </p>
+            <ul class="about-list">
+              <li>
+                <i class="fas fa-user-gear"></i>
+                <div>
+                  <h4>Skilled engineers &amp; technicians</h4>
+                  <p>Experienced team that works on lifts of every brand and model.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <h4>Offices in Chattogram &amp; Dhaka</h4>
+                  <p>Head office in Agrabad, Chattogram and branch office in Malibag, Dhaka.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                  <h4>Safety first, always</h4>
+                  <p>Every mechanical, electrical and safety device is checked and recorded.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="about-sign">
+              <a href="#services" class="btn btn--navy">Our Services <i class="fas fa-arrow-right"></i></a>
+              <a href="tel:+8801714216666" class="about-call" data-link="call">
+                <i class="fas fa-phone"></i>
+                <span><small>Call us any time</small><strong>01714-216666</strong></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section id="services" class="sec sec--grey" data-floor="2" data-name="Services">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>02</b> Our Services</span>
+            <h2 class="sec-title">Everything Your Lift Needs, <span>Under One Roof</span></h2>
+            <p class="sec-desc">From a brand-new installation to monthly care and emergency repair — we handle it all.</p>
+          </div>
+
+          <div class="svc-grid">
+            <article class="svc" data-reveal="up">
+              <div class="svc__img door-reveal"><span class="svc__num">01</span><img src="assets/images/lift/lobby-modern.jpg" alt="New lift installation" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-elevator"></i></div>
+                <h3>New Lift Installation &amp; Sales</h3>
+                <p>Supply and installation of new lifts for homes, apartments, offices, hospitals and factories.</p>
+                <button class="link-arrow" type="button" data-service="install">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.1s">
+              <div class="svc__img door-reveal" style="--d: 0.1s"><span class="svc__num">02</span><img src="assets/images/lift/escalator-twin.jpg" alt="Escalator installation" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-stairs"></i></div>
+                <h3>Escalator Installation &amp; Sales</h3>
+                <p>Escalators for shopping malls, commercial complexes and public buildings.</p>
+                <button class="link-arrow" type="button" data-service="escalator">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.2s">
+              <div class="svc__img door-reveal" style="--d: 0.2s"><span class="svc__num">03</span><img src="assets/images/lift/roller-guide.jpg" alt="Lift repair and servicing" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-screwdriver-wrench"></i></div>
+                <h3>Old Lift Repair &amp; Servicing</h3>
+                <p>Noisy, jerky or frequently stopping lift? We repair all brands and models.</p>
+                <button class="link-arrow" type="button" data-service="repair">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up">
+              <div class="svc__img door-reveal"><span class="svc__num">04</span><img src="assets/images/lift/lift-car-panel.jpg" alt="Monthly lift maintenance" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-calendar-check"></i></div>
+                <h3>Monthly Maintenance Contract</h3>
+                <p>Fixed monthly visits, a full safety checklist and a written report — every month.</p>
+                <button class="link-arrow" type="button" data-service="amc">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.1s">
+              <div class="svc__img door-reveal" style="--d: 0.1s"><span class="svc__num">05</span><img src="assets/images/lift/lift-buttons.jpg" alt="Lift spare parts" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-gears"></i></div>
+                <h3>Lift Spare Parts Supply</h3>
+                <p>Ready stock of control boards, door parts, ropes, buttons, displays and more.</p>
+                <button class="link-arrow" type="button" data-service="parts">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.2s">
+              <div class="svc__img door-reveal" style="--d: 0.2s"><span class="svc__num">06</span><img src="assets/images/lift/lift-doors-steel.jpg" alt="Lift fault diagnosis" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-stethoscope"></i></div>
+                <h3>Fault Diagnosis &amp; Technical Support</h3>
+                <p>Our engineers find the real cause of the problem and give clear solutions.</p>
+                <button class="link-arrow" type="button" data-service="diagnosis">Learn more <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRODUCTS ================= -->
+      <section id="products" class="sec" data-floor="3" data-name="Products">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>03</b> Products</span>
+            <h2 class="sec-title">Lifts, Escalators &amp; <span>Spare Parts</span></h2>
+            <p class="sec-desc">Choose a category, then tap any product for details. Ask us for the price — we reply quickly.</p>
+          </div>
+          <div class="filters" id="prodFilters" role="toolbar" aria-label="Product categories"></div>
+          <div class="prod-grid" id="prodGrid" aria-live="polite"></div>
+          <p class="note" data-reveal="up">
+            <i class="fas fa-circle-info"></i> No online payment needed — send us a message and we'll share the best price for your building.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= OUR WORKS ================= -->
+      <section id="projects" class="sec sec--grey" data-floor="4" data-name="Our Works">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>04</b> Our Works</span>
+            <h2 class="sec-title">Lifts We Have <span>Installed &amp; Serviced</span></h2>
+            <p class="sec-desc">A look at buildings, homes and institutions where our team has installed and maintained lifts.</p>
+          </div>
+          <div class="filters" id="projFilters" role="toolbar" aria-label="Project types"></div>
+          <!-- Gallery items come from assets/js/data.js → projects -->
+          <div class="proj-grid" id="projGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= WHY CHOOSE US ================= -->
+      <section id="why" class="sec sec--navy why" data-floor="5" data-name="Why Us">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>05</b> Why Choose Us</span>
+            <h2 class="sec-title">Why Building Owners <span>Choose Us</span></h2>
+            <p class="sec-desc">Six reasons our customers trust us with their lifts — year after year.</p>
+          </div>
+          <div class="why-grid">
+            <div class="why-card" data-reveal="up">
+              <span class="why-card__no">01</span>
+              <div class="why-card__ico"><i class="fas fa-user-gear"></i></div>
+              <h3>Experienced Technicians</h3>
+              <p>Trained engineers who know every major lift brand inside out.</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.1s">
+              <span class="why-card__no">02</span>
+              <div class="why-card__ico"><i class="fas fa-award"></i></div>
+              <h3>Quality Lifts &amp; Parts</h3>
+              <p>Reliable lifts and genuine, tested spare parts — no shortcuts.</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.2s">
+              <span class="why-card__no">03</span>
+              <div class="why-card__ico"><i class="fas fa-calendar-check"></i></div>
+              <h3>Regular Maintenance</h3>
+              <p>Monthly service plans that prevent breakdowns before they happen.</p>
+            </div>
+            <div class="why-card" data-reveal="up">
+              <span class="why-card__no">04</span>
+              <div class="why-card__ico"><i class="fas fa-bolt"></i></div>
+              <h3>Fast Service</h3>
+              <p>On-site within 30 minutes of an emergency call — 24 hours, 365 days.</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.1s">
+              <span class="why-card__no">05</span>
+              <div class="why-card__ico"><i class="fas fa-handshake"></i></div>
+              <h3>After-Sales Support</h3>
+              <p>We stay with you after installation with service, parts and advice.</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.2s">
+              <span class="why-card__no">06</span>
+              <div class="why-card__ico"><i class="fas fa-shield-heart"></i></div>
+              <h3>Safety &amp; Satisfaction</h3>
+              <p>Your passengers' safety and your peace of mind come first.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MONTHLY SERVICING ================= -->
+      <section id="maintenance" class="sec sec--grey" data-floor="6" data-name="Monthly Service">
+        <div class="container">
+          <div class="amc-top">
+            <div data-reveal="left">
+              <span class="floor-tag"><b>06</b> Monthly Servicing</span>
+              <h2 class="sec-title">Already Have a Lift? <span>Let Us Take Care of It</span></h2>
+              <p class="sec-desc">
+                With a monthly servicing contract, our technicians visit on a fixed schedule, inspect every part and
+                fix small issues before they turn into costly breakdowns.
+              </p>
+              <ul class="benefits">
+                <li><i class="fas fa-arrow-trend-down"></i>Fewer breakdowns</li>
+                <li><i class="fas fa-shield-halved"></i>Safer rides for everyone</li>
+                <li><i class="fas fa-hourglass-half"></i>Longer lift life</li>
+                <li><i class="fas fa-truck-fast"></i>Priority emergency response</li>
+                <li><i class="fas fa-file-lines"></i>Written report every visit</li>
+                <li><i class="fas fa-wallet"></i>Fixed, predictable monthly cost</li>
               </ul>
             </div>
+
+            <div class="plan" data-reveal="right">
+              <span class="plan__ribbon">For any brand of lift</span>
+              <h3>Monthly Maintenance Contract</h3>
+              <p>For apartments, offices, hospitals, factories and shopping malls.</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Scheduled monthly visit by a trained technician</li>
+                <li><i class="fas fa-check"></i><span><span data-chk-total>30+</span>-point inspection of the whole lift</span></li>
+                <li><i class="fas fa-check"></i>Cleaning, lubrication and adjustment</li>
+                <li><i class="fas fa-check"></i>Minor repairs and parts advice</li>
+                <li><i class="fas fa-check"></i>30-minute emergency response, 24/7</li>
+                <li><i class="fas fa-check"></i>Monthly service report</li>
+              </ul>
+              <div class="plan__btns">
+                <a class="btn btn--wa" href="https://wa.me/8801714216666" data-link="whatsapp" data-text="Hello! I'd like a monthly maintenance contract for my lift." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Request a Contract</a>
+                <a class="btn btn--ghost" href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i> Call 01714-216666</a>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub-head" data-reveal="up">What we check every month</h3>
+          <div class="chk-wrap" data-reveal="up">
+            <div class="chk-tabs" id="chkTabs" role="tablist" aria-label="Inspection areas"></div>
+            <div class="chk-panel" id="chkPanel" role="tabpanel"></div>
+          </div>
+
+          <h3 class="sub-head" data-reveal="up">How to start a contract</h3>
+          <div class="steps">
+            <div class="steps__line" aria-hidden="true"></div>
+            <div class="step" style="--i: 0">
+              <div class="step__ico"><i class="fas fa-phone-volume"></i></div>
+              <h4>Contact us</h4>
+              <p>Call, WhatsApp or send the form below.</p>
+            </div>
+            <div class="step" style="--i: 1">
+              <div class="step__ico"><i class="fas fa-magnifying-glass"></i></div>
+              <h4>Free site inspection</h4>
+              <p>Our engineer checks your lift's condition.</p>
+            </div>
+            <div class="step" style="--i: 2">
+              <div class="step__ico"><i class="fas fa-file-signature"></i></div>
+              <h4>Sign the agreement</h4>
+              <p>We agree the monthly fee and visit schedule.</p>
+            </div>
+            <div class="step" style="--i: 3">
+              <div class="step__ico"><i class="fas fa-screwdriver-wrench"></i></div>
+              <h4>Regular servicing</h4>
+              <p>Monthly visits, reports and emergency support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EMERGENCY BAND ================= -->
+      <div class="emg">
+        <div class="container">
+          <div class="emg__l" data-reveal="left">
+            <div class="emg__ico"><i class="fas fa-phone"></i></div>
+            <div>
+              <h3>Lift stuck or not working?</h3>
+              <p>Our emergency team reaches you within <strong>30 minutes</strong> — day or night, all year.</p>
+            </div>
+          </div>
+          <div class="emg__btns" data-reveal="right">
+            <a href="tel:+8801714216666" class="btn btn--white" data-link="call"><i class="fas fa-phone"></i> 01714-216666</a>
+            <a href="https://wa.me/8801714216666" class="btn btn--ghost" data-link="whatsapp" data-text="Emergency! My lift needs urgent service." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="ft-bot">
-          <p>
-            © 2026 <a href="#hero">Innovative Engineering</a>. All Rights
-            Reserved. Total Solution for Lifts &amp; Escalators.
-          </p>
-          <div class="ft-bot-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a onclick="scrollToSec('contact')">Support</a>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="sec" data-floor="7" data-name="Contact">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>07</b> Contact</span>
+            <h2 class="sec-title">Let's Talk About <span>Your Lift</span></h2>
+            <p class="sec-desc">Ask for a price, book a site inspection or report a problem — we usually reply within minutes.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="c-cards">
+              <a class="c-card" href="tel:+8801714216666" data-link="call" data-reveal="up">
+                <span class="c-card__ico"><i class="fas fa-phone"></i></span>
+                <h4>Call us</h4>
+                <strong>01714-216666</strong>
+              </a>
+              <a class="c-card" href="tel:+8801829984722" data-link="call2" data-reveal="up" style="--d: 0.05s">
+                <span class="c-card__ico"><i class="fas fa-mobile-screen"></i></span>
+                <h4>Alternate number</h4>
+                <strong>01829-984722</strong>
+              </a>
+              <a class="c-card c-card--wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.1s">
+                <span class="c-card__ico"><i class="fab fa-whatsapp"></i></span>
+                <h4>WhatsApp</h4>
+                <strong>Chat with us</strong>
+              </a>
+              <a class="c-card c-card--ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.15s">
+                <span class="c-card__ico"><i class="fab fa-facebook-messenger"></i></span>
+                <h4>Messenger</h4>
+                <strong>Message us</strong>
+              </a>
+              <a class="c-card c-card--fb" href="https://www.facebook.com/innovativeengbd" data-link="facebook" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.2s">
+                <span class="c-card__ico"><i class="fab fa-facebook-f"></i></span>
+                <h4>Facebook</h4>
+                <strong>Follow our page</strong>
+              </a>
+              <a class="c-card" href="mailto:palash_pe@yahoo.com" data-link="email" data-reveal="up" style="--d: 0.25s">
+                <span class="c-card__ico"><i class="fas fa-envelope"></i></span>
+                <h4>Email</h4>
+                <strong>palash_pe@yahoo.com</strong>
+              </a>
+              <div class="c-card c-card--wide" data-reveal="up" style="--d: 0.3s">
+                <span class="c-card__ico"><i class="fas fa-location-dot"></i></span>
+                <h4>Head office</h4>
+                <address>Barik Building, 10 Sk. Mujib Road (2nd Floor), Agrabad C/A, Chattogram</address>
+              </div>
+              <div class="c-card c-card--wide" data-reveal="up" style="--d: 0.35s">
+                <span class="c-card__ico"><i class="fas fa-building"></i></span>
+                <h4>Branch office</h4>
+                <address>63/1 VIP Road, Malibag, Dhaka-1217</address>
+              </div>
+            </div>
+
+            <div class="form-box" data-reveal="right">
+              <h3>Send Us a Message</h3>
+              <p>Fill in the form — it opens WhatsApp with your message ready to send.</p>
+              <div class="f-ok" id="formOk" role="status">
+                <i class="fas fa-circle-check"></i> Thank you! Press “Send” in WhatsApp and we'll reply shortly.
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="f-row">
+                  <div class="f-grp">
+                    <label for="fName">Your name <b>*</b></label>
+                    <div class="f-ctl"><i class="fas fa-user"></i><input id="fName" name="name" type="text" autocomplete="name" placeholder="Full name" required /></div>
+                  </div>
+                  <div class="f-grp">
+                    <label for="fPhone">Mobile number <b>*</b></label>
+                    <div class="f-ctl">
+                      <i class="fas fa-phone"></i
+                      ><input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="01XXXXXXXXX" pattern="[0-9+\-\s]{11,16}" title="Enter a valid mobile number, e.g. 01712345678" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="f-grp">
+                  <label for="fService">Service needed</label>
+                  <div class="f-ctl">
+                    <i class="fas fa-list"></i>
+                    <select id="fService" name="service">
+                      <option value="">Select a service…</option>
+                      <option value="install">New lift installation</option>
+                      <option value="escalator">Escalator installation</option>
+                      <option value="repair">Lift repair &amp; servicing</option>
+                      <option value="amc">Monthly maintenance contract</option>
+                      <option value="parts">Spare parts</option>
+                      <option value="diagnosis">Fault diagnosis / technical support</option>
+                      <option value="product">Product price enquiry</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="f-grp">
+                  <label for="fMsg">Message <b>*</b></label>
+                  <div class="f-ctl"><i class="fas fa-message"></i><textarea id="fMsg" name="message" placeholder="Tell us briefly what you need…" required></textarea></div>
+                </div>
+                <button type="submit" class="btn btn--block"><i class="fab fa-whatsapp"></i> Send Message</button>
+                <p class="f-note"><i class="fas fa-lock"></i> We only use your number to reply to you.</p>
+              </form>
+            </div>
+          </div>
+
+          <div class="map" data-reveal="up">
+            <iframe
+              title="Innovative Engineering head office map"
+              src="https://maps.google.com/maps?q=Barik%20Building%2C%20Sheikh%20Mujib%20Road%2C%20Agrabad%2C%20Chattogram&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="ftr">
+      <div class="container ftr__top">
+        <div>
+          <a href="#home" class="brand">
+            <img src="assets/images/logo/logo.png" alt="Innovative Engineering logo" width="52" height="52" loading="lazy" />
+            <span class="brand__txt"><strong>Innovative Engineering</strong><small>Lift &amp; Escalator Solutions</small></span>
+          </a>
+          <p>Installation, repair, monthly maintenance and spare parts for lifts and escalators across Bangladesh.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/innovativeengbd" data-link="facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:palash_pe@yahoo.com" data-link="email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="ftr__links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#projects">Our Works</a></li>
+            <li><a href="#maintenance">Monthly Servicing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="ftr__links">
+            <li><a href="#services">New Lift Installation</a></li>
+            <li><a href="#services">Escalator Installation</a></li>
+            <li><a href="#services">Lift Repair</a></li>
+            <li><a href="#maintenance">Monthly Maintenance</a></li>
+            <li><a href="#products">Spare Parts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in Touch</h4>
+          <ul class="ftr__ci">
+            <li><i class="fas fa-location-dot"></i><span>Barik Building, 10 Sk. Mujib Road (2nd Fl.), Agrabad C/A, Chattogram</span></li>
+            <li><i class="fas fa-building"></i><span>63/1 VIP Road, Malibag, Dhaka-1217</span></li>
+            <li><i class="fas fa-phone"></i><span><a href="tel:+8801714216666" data-link="call">01714-216666</a>, <a href="tel:+8801829984722" data-link="call2">01829-984722</a></span></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:palash_pe@yahoo.com" data-link="email">palash_pe@yahoo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container ftr__bot">
+        <span>© <span data-year>2026</span> Innovative Engineering. All rights reserved.</span>
+        <span>Total Solution for Lifts &amp; Escalators</span>
       </div>
     </footer>
 
-    <!-- BACK TO TOP -->
-    <button id="btt" aria-label="Back to top">
-      <i class="fas fa-angle-up"></i>
-    </button>
+    <!-- Side floor navigator (desktop) -->
+    <nav class="floors" id="floors" aria-label="Section navigator">
+      <div class="floors__display" id="floorsDisplay">G</div>
+      <ol></ol>
+    </nav>
 
-    <!-- ============================================================
-         WHATSAPP WIDGET
-    ============================================================ -->
-    <div class="wa-w">
-      <div class="wa-pop" id="waPop">
-        <div class="wa-ph">
-          <div class="wa-av"><i class="fas fa-hard-hat"></i></div>
-          <div class="wa-ph-info">
-            <strong>Innovative Engineering</strong>
-            <small
-              ><span class="wa-dot"></span> Online — replies in minutes</small
-            >
-          </div>
-          <button class="wa-x" id="waX"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="wa-pb">
-          <div class="wa-bubble">
-            👋 Hello! Welcome to
-            <strong>Innovative Engineering</strong>.<br /><br />
-            How can we help you? Send us a message about lift maintenance,
-            emergency service, or product enquiries.
-          </div>
-          <div class="wa-inp">
-            <span>Type a message...</span>
-            <a
-              href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+help."
-              target="_blank"
-              class="wa-send"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </div>
-          <a
-            href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+your+services."
-            target="_blank"
-            class="wa-full"
-            ><i class="fab fa-whatsapp"></i> Start WhatsApp Chat</a
-          >
-        </div>
-      </div>
-      <button class="wa-fab" id="waFab"><i class="fab fa-whatsapp"></i></button>
+    <!-- Floating contact (desktop) -->
+    <div class="fcta">
+      <a class="fcta__wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" data-tip="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="fcta__ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" data-tip="Messenger" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+      <a class="fcta__call" href="tel:+8801714216666" data-link="call" data-tip="01714-216666" aria-label="Call"><i class="fas fa-phone"></i></a>
+      <button class="fcta__top" id="toTop" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
     </div>
 
-    <!-- CONTACT SIDEBAR TAB -->
-    <!-- <div class="sb-overlay" id="sbOverlay"></div>
-    <button class="sb-tab" onclick="openSidebar()">
-      <i class="fas fa-envelope" style="font-size: 11px"></i> Quick Contact
-    </button>
-    <div class="sb-panel" id="sbPanel">
-      <div class="sb-hd">
-        <h4>Quick Contact</h4>
-        <p>Send us a quick message — we respond within minutes.</p>
-        <button class="sb-x" onclick="closeSidebar()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="sb-body">
-        <div class="f-success" id="sfSuccess">
-          <i class="fas fa-check-circle"></i> Message sent! We'll contact you
-          shortly.
-        </div>
-        <form onsubmit="doForm(event, 'sfSuccess')">
-          <div class="f-grp">
-            <label for="sfName">Your Name *</label
-            ><input type="text" id="sfName" placeholder="Full name" required />
-          </div>
-          <div class="f-grp">
-            <label for="sfPhone">Phone *</label
-            ><input
-              type="tel"
-              id="sfPhone"
-              placeholder="01XXXXXXXXX"
-              required
-            />
-          </div>
-          <div class="f-grp">
-            <label for="sfEmail">Email</label
-            ><input type="email" id="sfEmail" placeholder="your@email.com" />
-          </div>
-          <div class="f-grp">
-            <label for="sfMsg">Message *</label
-            ><textarea
-              id="sfMsg"
-              placeholder="How can we help you?"
-              style="min-height: 100px"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn-send">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-        <div class="sb-ci">
-          <h6>Or reach us directly</h6>
-          <a href="tel:+8801714216666" class="sb-ql"
-            ><i class="fas fa-phone"></i> 01714-216666</a
-          >
-          <a href="tel:+8801829984722" class="sb-ql"
-            ><i class="fas fa-phone"></i> 01829-984722</a
-          >
-          <a href="mailto:palash_pe@yahoo.com" class="sb-ql"
-            ><i class="fas fa-envelope"></i> palash_pe@yahoo.com</a
-          >
-          <a
-            href="https://wa.me/8801714216666"
-            target="_blank"
-            class="sb-ql"
-            style="background: #25d366; color: #fff"
-            ><i class="fab fa-whatsapp" style="color: #fff"></i> Chat on
-            WhatsApp</a
-          >
-        </div>
-      </div>
-    </div> -->
+    <!-- Fixed bottom contact bar (mobile) -->
+    <nav class="mbar" aria-label="Quick contact">
+      <a class="mbar__wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="mbar__ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+      <a class="mbar__call" href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i> Call</a>
+    </nav>
 
-    <!-- ============================================================
-         SCRIPTS
-    ============================================================ -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Detail modal (services & products) -->
+    <dialog class="modal" id="modal" aria-label="Details">
+      <button class="modal__x" id="modalX" type="button" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div id="modalBody" style="display: contents"></div>
+    </dialog>
 
-    <script>
-      /* ---- Preloader ---- */
-      window.addEventListener("load", () => {
-        setTimeout(
-          () => document.getElementById("ie-load").classList.add("done"),
-          700,
-        );
-      });
+    <!-- Project lightbox -->
+    <dialog class="lightbox" id="lightbox" aria-label="Project photo">
+      <button class="modal__x" id="lbX" type="button" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption><strong></strong><span></span></figcaption>
+      </figure>
+      <button class="lb-nav lb-nav--prev" id="lbPrev" type="button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="lb-nav lb-nav--next" id="lbNext" type="button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </dialog>
 
-      /* ---- Hero Swiper ---- */
-      const heroSwiper = new Swiper("#heroSwiper", {
-        loop: true,
-        speed: 900,
-        autoplay: { delay: 5500, disableOnInteraction: false },
-        effect: "fade",
-        fadeEffect: { crossFade: true },
-        on: {
-          slideChange() {
-            const n = String(this.realIndex + 1).padStart(2, "0");
-            document.getElementById("slideNum").textContent = n;
-          },
-        },
-      });
-      document
-        .getElementById("heroPrev")
-        .addEventListener("click", () => heroSwiper.slidePrev());
-      document
-        .getElementById("heroNext")
-        .addEventListener("click", () => heroSwiper.slideNext());
-
-      /* ---- SPA Sections list (for scroll spy) ---- */
-      const sections = [
-        "hero",
-        "about",
-        "services",
-        "maintenance-checklist",
-        "products",
-        "contact",
-      ];
-
-      /* ---- Sticky Header + Scroll Spy ---- */
-      const hdr = document.getElementById("hdr");
-      const btt = document.getElementById("btt");
-
-      function updateActiveLink() {
-        let current = "hero";
-        sections.forEach((id) => {
-          const el = document.getElementById(id);
-          if (el && window.scrollY >= el.offsetTop - 120) current = id;
-        });
-        document.querySelectorAll("[data-section]").forEach((a) => {
-          a.classList.toggle("active", a.dataset.section === current);
-        });
-      }
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 60) hdr.classList.add("scrolled");
-        else hdr.classList.remove("scrolled");
-        btt.classList.toggle("on", window.scrollY > 300);
-        updateActiveLink();
-      });
-
-      /* ---- Smooth Scroll helper ---- */
-      function scrollToSec(id) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        window.scrollTo({ top: el.offsetTop - 80, behavior: "smooth" });
-      }
-
-      /* ---- SPA Nav links (hash anchors) ---- */
-      document.querySelectorAll("[data-section]").forEach((a) => {
-        a.addEventListener("click", (e) => {
-          e.preventDefault();
-          const id = a.dataset.section;
-          scrollToSec(id);
-          closeOC();
-        });
-      });
-
-      /* ---- Back To Top ---- */
-      btt.addEventListener("click", () =>
-        window.scrollTo({ top: 0, behavior: "smooth" }),
-      );
-
-      /* ---- Mobile Offcanvas ---- */
-      const hamBtn = document.getElementById("hamBtn");
-      const ocOverlay = document.getElementById("ocOverlay");
-      const ocPanel = document.getElementById("ocPanel");
-      function openOC() {
-        ocPanel.classList.add("on");
-        ocOverlay.classList.add("on");
-        document.body.style.overflow = "hidden";
-      }
-      function closeOC() {
-        ocPanel.classList.remove("on");
-        ocOverlay.classList.remove("on");
-        document.body.style.overflow = "";
-      }
-      hamBtn.addEventListener("click", openOC);
-      document.getElementById("ocClose").addEventListener("click", closeOC);
-      ocOverlay.addEventListener("click", closeOC);
-
-      /* ---- Checklist Tabs ---- */
-      function showTab(name, btn) {
-        document
-          .querySelectorAll(".tab-content")
-          .forEach((t) => t.classList.remove("on"));
-        document
-          .querySelectorAll(".tab-btn")
-          .forEach((b) => b.classList.remove("on"));
-        document.getElementById("tc-" + name).classList.add("on");
-        btn.classList.add("on");
-      }
-      function toggleChk(el) {
-        el.classList.toggle("done");
-      }
-
-      /* ---- WhatsApp Widget ---- */
-      const waPop = document.getElementById("waPop");
-      const waFab = document.getElementById("waFab");
-      let waOpen = false;
-      function toggleWA() {
-        waOpen = !waOpen;
-        waPop.classList.toggle("on", waOpen);
-      }
-      waFab.addEventListener("click", toggleWA);
-      document.getElementById("waX").addEventListener("click", (e) => {
-        e.stopPropagation();
-        waOpen = false;
-        waPop.classList.remove("on");
-      });
-      setTimeout(() => {
-        if (!waOpen) {
-          waOpen = true;
-          waPop.classList.add("on");
-        }
-      }, 3500);
-
-
-
-      /* ---- Form Submit (demo) ---- */
-      function doForm(e, successId) {
-        e.preventDefault();
-        const btn = e.target.querySelector("[type=submit]");
-        const orig = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        btn.disabled = true;
-        setTimeout(() => {
-          btn.innerHTML = orig;
-          btn.disabled = false;
-          const s = document.getElementById(successId);
-          s.classList.add("show");
-          e.target.reset();
-          setTimeout(() => s.classList.remove("show"), 5000);
-        }, 1400);
-      }
-
-      /* ---- Intersection Observer — fade in cards ---- */
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((en) => {
-            if (en.isIntersecting) {
-              en.target.style.opacity = "1";
-              en.target.style.transform = "translateY(0)";
-              obs.unobserve(en.target);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
-
-      document
-        .querySelectorAll(
-          ".svc-card,.prod-card,.info-card,.feat-item,.elec-item",
-        )
-        .forEach((el) => {
-          el.style.cssText +=
-            "opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease";
-          obs.observe(el);
-        });
-    </script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

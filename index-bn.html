@@ -1,1506 +1,715 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ইনোভেটিভ ইঞ্জিনিয়ারিং | লিফট ও এস্কেলেটর স্থাপন, মেরামত ও রক্ষণাবেক্ষণ</title>
+    <meta
+      name="description"
+      content="ইনোভেটিভ ইঞ্জিনিয়ারিং — সারা বাংলাদেশে প্যাসেঞ্জার, হোম, হাসপাতাল ও কার্গো লিফট এবং এস্কেলেটর সরবরাহ, স্থাপন, মেরামত, মাসিক রক্ষণাবেক্ষণ ও যন্ত্রাংশ সরবরাহ।"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#123462" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="bn" href="index-bn.html" />
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png" />
 
-<html lang="bn-BD">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>
-      Service &amp; Maintenance | Innovative Engineering — Lift &amp; Escalator
-      Solutions
-    </title>
-<meta content="Innovative Engineering provides total lift and escalator solutions including monthly maintenance, emergency service, installation, and electrical products in Bangladesh." name="description"/>
-<meta content="index, follow" name="robots"/>
-<link href="assets/images/logo/logo.png" rel="shortcut icon" type="image/png"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&amp;family=Archivo:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Swiper CSS (for hero slider) -->
-<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-</head>
-<body>
-<!-- PRELOADER -->
-<div id="ie-load">
-<div class="ld-dots">
-<span></span><span></span><span></span><span></span>
-</div>
-</div>
-<!-- OFFCANVAS OVERLAY -->
-<div class="oc-overlay" id="ocOverlay"></div>
-<!-- OFFCANVAS PANEL (Mobile) -->
-<nav aria-label="Mobile navigation" class="oc-panel" id="ocPanel">
-<div class="oc-head">
-<a href="#hero"><img alt="Innovative Engineering" src="assets/images/logo/logo.png"/></a>
-<button class="oc-close" id="ocClose">
-<i class="fas fa-times"></i>
-</button>
-</div>
-<ul class="oc-nav" id="ocNav">
-<li><a data-section="hero" href="#hero">হোম</a></li>
-<li><a data-section="about" href="#about">পরিচিতি</a></li>
-<li><a data-section="services" href="#services">পরিষেবা</a></li>
-<li>
-<a data-section="maintenance-checklist" href="#maintenance-checklist">রক্ষণাবেক্ষণ</a>
-</li>
-<li><a data-section="products" href="#products">পণ্য</a></li>
-<li><a data-section="contact" href="#contact">যোগাযোগ</a></li>
-</ul>
-<div class="oc-cta">
-<p>
-<i class="fas fa-phone"></i><a href="tel:+8801714216666">01714-216666</a>
-</p>
-<p>
-<i class="fas fa-phone"></i><a href="tel:+8801829984722">01829-984722</a>
-</p>
-<p>
-<i class="fas fa-envelope"></i><a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
-</p>
-</div>
-</nav>
-<!-- ============================================================
-         HEADER — SPA Navigation
-    ============================================================ -->
-<header id="hdr">
-<div class="hdr-inner">
-<a class="hdr-logo spa-link" data-section="hero" href="#hero">
-<img alt="Innovative Engineering" src="assets/images/logo/logo.png"/>
-</a>
-<nav aria-label="Primary navigation" class="spa-nav">
-<ul id="spaMenu">
-<li><a class="active" data-section="hero" href="#hero">হোম</a></li>
-<li><a data-section="about" href="#about">পরিচিতি</a></li>
-<li><a data-section="services" href="#services">পরিষেবা</a></li>
-<li>
-<a data-section="maintenance-checklist" href="#maintenance-checklist">রক্ষণাবেক্ষণ</a>
-</li>
-<li><a data-section="products" href="#products">পণ্য</a></li>
-<li><a data-section="contact" href="#contact">যোগাযোগ</a></li>
-</ul>
-</nav>
-<div class="hdr-actions">
-<div class="lang-switch">
-<a class="" href="index.html">EN</a>
-<span>|</span>
-<a class="active" href="index-bn.html">BN</a>
-</div>
-<a href="#contact" class="btn-quote spa-link" data-section="contact">মূল্য জানুন</a>
-<button aria-label="Open menu" class="ham-btn" id="hamBtn">
-<span></span><span></span><span></span>
-</button>
-</div>
-</div>
-</header>
-<!-- ============================================================
-         HERO SLIDER
-    ============================================================ -->
-<section class="hero-slider-section" id="hero">
-<div class="swiper hero-swiper" id="heroSwiper">
-<div class="swiper-wrapper">
-<!-- Slide 1 -->
-<div class="swiper-slide">
-<div class="slide-img" style='
-                background-image: url("assets/images/lift/hero-elevator.jpg");
-              '></div>
-<div class="slide-overlay"></div>
-<div class="slide-content">
-<div class="container">
-<div class="slide-text">
-<div class="slide-badge">
-                    মোট লিফ্ট এবং এস্কেলেটর সলিউশন
-                  </div>
-<h1 class="slide-title">
-                    এক্সপার্ট লিফ্ট <span>রক্ষণাবেক্ষণ</span><br/>
-                    আপনি বিশ্বাস করতে পারেন
-                  </h1>
-<p class="slide-desc">
-                    পেশাগত মাসিক রক্ষণাবেক্ষণ, জরুরি সেবা, এবং
-                    বাংলাদেশে লিফট সমাধান সম্পূর্ণ করুন — ২৪/৭ অপারেটিং,
-                    বছরে 365 দিন ।
-                  </p>
-<div class="slide-btns">
-<a class="btn-primary spa-link" data-section="maintenance-checklist" href="#maintenance-checklist">
-<i class="fas fa-clipboard-check"></i> রক্ষণাবেক্ষণ দেখুন
-                      তালিকা
-                    </a>
-<a class="btn-outline-w spa-link" data-section="contact" href="#contact">
-<i class="fas fa-phone"></i> আমাদের সাথে যোগাযোগ করুন
-                    </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Slide 2 -->
-<div class="swiper-slide">
-<div class="slide-img" style='
-                background-image: url("assets/images/lift/lobby.jpg");
-              '></div>
-<div class="slide-overlay"></div>
-<div class="slide-content">
-<div class="container">
-<div class="slide-text">
-<div class="slide-badge">
-                    জরুরি পরিষেবা — 30 মিনিটের প্রতিক্রিয়া
-                  </div>
-<h1 class="slide-title">
-<span>24/7</span> জরুরি সহায়তা<br/>
-                    লিফ্ট সার্ভিস
-                  </h1>
-<p class="slide-desc">
-                    আমরা আপনার কল করার 30 মিনিটের মধ্যে সাইটে পৌঁছে যাই । সারা বছর ধরে
-                    সমস্ত ব্র্যান্ডের লিফট এবং এসকেলেটরের জন্য জরুরি প্রতিক্রিয়া
-                    এবং মডেল ।
-                  </p>
-<div class="slide-btns">
-<a class="btn-primary" href="tel:+8801714216666">
-<i class="fas fa-phone"></i> এখনই কল করুন: 01714-216666
-                    </a>
-<a class="btn-outline-w" href="https://wa.me/8801714216666?text=Emergency!+I+need+urgent+lift+service" target="_blank">
-<i class="fab fa-whatsapp"></i> আমাদের WhatsApp
-                    </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Slide 3 -->
-<div class="swiper-slide">
-<div class="slide-img" style='
-                background-image: url("assets/images/lift/maintenance.jpg");
-              '></div>
-<div class="slide-overlay"></div>
-<div class="slide-content">
-<div class="container">
-<div class="slide-text">
-<div class="slide-badge">
-                    দক্ষ প্রকৌশলী ও প্রযুক্তিবিদ
-                  </div>
-<h1 class="slide-title">
-                    পেশাজীবী
-                    <span>পরিদর্শন</span><br/>
-                    সার্ভিসিং
-                  </h1>
-<p class="slide-desc">
-                    আমাদের প্রত্যয়িত প্রকৌশলীরা পুঙ্খানুপুঙ্খ মাসিক পরিদর্শন করেন
-                    সমস্ত যান্ত্রিক, বৈদ্যুতিক এবং নিরাপত্তা ব্যবস্থার — সম্পূর্ণরূপে
-                    নথিভুক্ত এবং রিপোর্ট করা হয়েছে ।
-                  </p>
-<div class="slide-btns">
-<a class="btn-primary spa-link" data-section="services" href="#services">
-<i class="fas fa-cogs"></i> আমাদের সেবাসমূহ
-                    </a>
-<a class="btn-outline-w spa-link" data-section="about" href="#about">
-                      আরও জানুন
-                    </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Slide 4 -->
-<div class="swiper-slide">
-<div class="slide-img" style='
-                background-image: url("assets/images/lift/hero-building.jpg");
-              '></div>
-<div class="slide-overlay"></div>
-<div class="slide-content">
-<div class="container">
-<div class="slide-text">
-<div class="slide-badge">
-                    কোরিয়ান · ইতালীয় · চীনা ব্র্যান্ড
-                  </div>
-<h1 class="slide-title">
-                    নতুন লিফ্ট
-                    <span>ইনস্টলেশন</span><br/>
-                    সরবরাহ করুন
-                  </h1>
-<p class="slide-desc">
-                    আমরা নেতৃস্থানীয় আন্তর্জাতিক থেকে লিফট সরবরাহ এবং ইনস্টল করি
-                    ব্র্যান্ড — খুচরা যন্ত্রাংশ, স্ট্যাবিলাইজার, ইউ .পি .এস সিস্টেম সহ,
-                    জেনারেটর এবং বৈদ্যুতিক পণ্য ।
-                  </p>
-<div class="slide-btns">
-<a class="btn-primary spa-link" data-section="products" href="#products">
-<i class="fas fa-boxes"></i> সব প্রোডাক্ট দেখুন
-                    </a>
-<a class="btn-outline-w spa-link" data-section="contact" href="#contact">
-                      মূল্য জানুন
-                    </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end swiper-wrapper -->
-</div>
-<!-- Hero Nav Buttons -->
-<div class="hero-nav">
-<button class="hero-nav-btn" id="heroPrev">
-<i class="fas fa-chevron-left"></i>
-</button>
-<button class="hero-nav-btn" id="heroNext">
-<i class="fas fa-chevron-right"></i>
-</button>
-</div>
-<!-- Slide Counter -->
-<div class="slide-counter">
-<span class="cur" id="slideNum">01</span> / 04
-      </div>
-<!-- Stats Bar -->
-<div class="hero-stats-bar">
-<div class="hs-item">
-<i class="fas fa-clock hs-icon"></i>
-<div>
-<div class="hs-num">24/7</div>
-<div class="hs-lbl">জরুরি সেবা</div>
-</div>
-</div>
-<div class="hs-item">
-<i class="fas fa-bolt hs-icon"></i>
-<div>
-<div class="hs-num">৩০ মিনিট</div>
-<div class="hs-lbl">উত্তর দেওয়ার জন্য সময়</div>
-</div>
-</div>
-<div class="hs-item">
-<i class="fas fa-elevator hs-icon"></i>
-<div>
-<div class="hs-num">100+</div>
-<div class="hs-lbl">লিফ্ট বজায় রাখা হয়েছে</div>
-</div>
-</div>
-<div class="hs-item">
-<i class="fas fa-award hs-icon"></i>
-<div>
-<div class="hs-num">15+</div>
-<div class="hs-lbl">অনেক বছরের অভিজ্ঞতা</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         ABOUT
-    ============================================================ -->
-<section class="sec-pad" id="about" style="background: #fff">
-<div class="container">
-<div class="about-grid">
-<div class="about-img-stack">
-<div class="about-img-main">
-<img alt="Modern escalator" loading="lazy" src="assets/images/lift/escalator.jpg"/>
-</div>
-<div class="about-img-sub">
-<img alt="Lift control panel" loading="lazy" src="assets/images/lift/control-panel.jpg"/>
-</div>
-<div class="exp-badge">
-<div class="big">15+</div>
-<div class="lbl">শ্রেষ্ঠত্বের বছর</div>
-</div>
-</div>
-<div>
-<div class="sec-label">উদ্ভাবনী প্রকৌশল সম্পর্কে</div>
-<h2 class="sec-title">লিফ্ট এবং এস্কেলেটরের জন্য মোট সমাধান</h2>
-<p>
-              উদ্ভাবনী প্রকৌশল ব্যাপকতার জন্য আপনার বিশ্বস্ত অংশীদার
-              লিফট এবং এসকেলেটরের রক্ষণাবেক্ষণ, ইনস্টলেশন এবং জরুরি অবস্থা
-              বাংলাদেশ জুড়ে পরিষেবা । আমরা বারিক সদর দপ্তর হয়
-              ভবন, ১০ স্ক. মুজিব রোড (২য় তলা), আগ্রাবাদ সি/এ, চট্টগ্রাম ।
-            </p>
-<p>
-              আমাদের দক্ষ প্রকৌশলী এবং প্রযুক্তিবিদরা নিশ্চিত করেন যে প্রতিটি লিফট কাজ করে
-              বিশেষজ্ঞ ব্যবস্থাপনার মাধ্যমে নিরাপদে এবং দক্ষতার সাথে, পুঙ্খানুপুঙ্খভাবে
-              পরিদর্শন, এবং সময়মত কর্মক্ষমতা পর্যবেক্ষণ ।
-            </p>
-<div class="about-features">
-<div class="feat-item">
-<div class="feat-ico">
-<i class="fas fa-calendar-check"></i>
-</div>
-<div class="feat-txt">
-<h6>মাসিক রুটিন পরিষেবা</h6>
-<p>
-                    নির্ধারিত চেক-আপ, অর্ধ-বার্ষিক সার্ভিসিং, এবং
-                    সমস্ত লিফট অংশ সরবরাহ/মেরামত ।
-                  </p>
-</div>
-</div>
-<div class="feat-item">
-<div class="feat-ico"><i class="fas fa-bolt"></i></div>
-<div class="feat-txt">
-<h6>30 মিনিটের ইমার্জেন্সি রেসপন্স</h6>
-<p>
-                    আমরা আপনার কল করার 30 মিনিটের মধ্যে সাইটে পৌঁছে যাই — 24 ঘন্টা,
-                    বছরে 365 দিন ।
-                  </p>
-</div>
-</div>
-<div class="feat-item">
-<div class="feat-ico"><i class="fas fa-shield-alt"></i></div>
-<div class="feat-txt">
-<h6>সেফটি কমপ্লায়েন্স এবং ডকুমেন্টেশন</h6>
-<p>
-                    সমস্ত যান্ত্রিক, বৈদ্যুতিক এবং নিরাপত্তা ডিভাইস পরিদর্শন করা হয়েছে এবং
-                    মাসিক রেকর্ড করা হয় ।
-                  </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         SERVICES
-    ============================================================ -->
-<section class="sec-pad services-section" id="services">
-<div class="container">
-<div style="text-align: center; max-width: 600px; margin: 0 auto 0">
-<div class="sec-label" style="justify-content: center">
-            আমরা যা দিচ্ছি
-          </div>
-<h2 class="sec-title">আমাদের মূল পরিষেবা</h2>
-<p class="sec-desc">
-            আপনার লিফটগুলি নিরাপদ, নির্ভরযোগ্য এবং
-            সারা বছর ধরে দক্ষতার সাথে চলছে ।
-          </p>
-</div>
-<div class="svc-grid">
-<!-- Card 1 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Monthly Maintenance" loading="lazy" src="assets/images/lift/maintenance.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-calendar-check"></i></div>
-<h4>মাসিক রক্ষণাবেক্ষণ</h4>
-<p>
-                সমস্ত যান্ত্রিক মাসিক রুটিন পরিদর্শন সম্পূর্ণ করুন,
-                বৈদ্যুতিক, এবং নিরাপত্তা উপাদান — নথিভুক্ত এবং রিপোর্ট করা
-                গ্রাহক ।
-              </p>
-<span class="svc-tag">নির্ধারিত</span>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Emergency Service" loading="lazy" src="assets/images/lift/lobby.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-ambulance"></i></div>
-<h4>জরুরি সেবা</h4>
-<p>
-                30 দিনের মধ্যে গ্যারান্টিযুক্ত অন-সাইট আগমনের সাথে 24/7 জরুরী সহায়তা
-                আপনার কল করার মিনিট । বছরে 365 দিন পরিষেবা পাওয়া যায় ।
-              </p>
-<span class="svc-tag">24/7 উপলভ্য →</span>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Repair &amp; Servicing" loading="lazy" src="assets/images/lift/control-panel.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-cogs"></i></div>
-<h4>রুটিন মেরামত ও সার্ভিসিং</h4>
-<p>
-                অর্ধ-বার্ষিক পূর্ণ পরিষেবা, জরুরি মেরামত এবং বার্ষিক
-                সব ধরনের লিফট এবং এস্কেলেটরের সরবরাহ সহ রক্ষণাবেক্ষণ
-                খুচরা যন্ত্রাংশ ।
-              </p>
-<span class="svc-tag">সমস্ত ব্র্যান্ড →</span>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Lift Installation" loading="lazy" src="assets/images/lift/hero-elevator.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-hard-hat"></i></div>
-<h4>লিফ্ট ইনস্টলেশন</h4>
-<p>
-                কোরিয়ান/ইতালিয়ান মেইন মোটর সহ নতুন লিফট স্থাপন
-                আবাসিক এবং জন্য ক্লোন লিফট এবং চীনা ব্র্যান্ড নতুন লিফট
-                বাণিজ্যিক ভবন ।
-              </p>
-<span class="svc-tag">নতুন ইনস্টলেশন →</span>
-</div>
-</div>
-<!-- Card 5 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Safety Inspection" loading="lazy" src="assets/images/lift/escalator.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-search"></i></div>
-<h4>নিরাপত্তা পরিদর্শন</h4>
-<p>
-                গাইড রেল, দড়ি, সুরক্ষার পুঙ্খানুপুঙ্খ নিরাপত্তা পরিদর্শন
-                ব্রেক, ডোর মেকানিজম এবং কন্ট্রোল সিস্টেম । সার্টিফাইড
-                পরিদর্শন প্রতিবেদন সরবরাহ করা হয়েছে ।
-              </p>
-<span class="svc-tag">প্রত্যয়িত →</span>
-</div>
-</div>
-<!-- Card 6 -->
-<div class="svc-card">
-<div class="svc-img">
-<img alt="Electrical Products" loading="lazy" src="assets/images/lift/building-night.jpg"/>
-</div>
-<div class="svc-body">
-<div class="svc-ico"><i class="fas fa-plug"></i></div>
-<h4>বৈদ্যুতিক ও বিদ্যুৎ পণ্য</h4>
-<p>
-                স্টেবিলাইজার (AVS/AIVS), ইউপিএস সিস্টেম, আইপিএস, ইনভার্টার,
-                ট্রান্সফরমার, সার্কিট ব্রেকার, জেনারেটর (20KW–1250KW), এবং
-                সাব-স্টেশন ।
-              </p>
-<span class="svc-tag">পণ্য দেখুন →</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         MAINTENANCE CHECKLIST
-    ============================================================ -->
-<section class="sec-pad checklist-section" id="maintenance-checklist">
-<div class="container">
-<div class="sec-label">মাসিক পরিদর্শন</div>
-<h2 class="sec-title">মাসিক রক্ষণাবেক্ষণের তালিকা</h2>
-<p class="sec-desc" style="max-width: 640px">
-          আমাদের প্রত্যয়িত প্রযুক্তিবিদরা নিম্নলিখিত ব্যাপক চেকগুলি সম্পাদন করেন
-          প্রতি মাসে প্রতিটি রক্ষণাবেক্ষণকৃত লিফটে — এর পাঁচটি মূল ক্ষেত্রকে আচ্ছাদন করে
-          লিফট সিস্টেম ।
-        </p>
-<div class="tab-nav" role="tablist">
-<button class="tab-btn on" onclick="showTab('shaft', this)">
-<i class="fas fa-layer-group"></i> খাদ কাজ
-          </button>
-<button class="tab-btn" onclick="showTab('landing', this)">
-<i class="fas fa-door-open"></i> ল্যান্ডিং ডোর
-          </button>
-<button class="tab-btn" onclick="showTab('cabin', this)">
-<i class="fas fa-cube"></i> কেবিন ও ডোর
-          </button>
-<button class="tab-btn" onclick="showTab('machine', this)">
-<i class="fas fa-industry"></i> মেশিন রুম
-          </button>
-<button class="tab-btn" onclick="showTab('others', this)">
-<i class="fas fa-ellipsis-h"></i> অন্যান্য
-          </button>
-</div>
-<!-- SHAFT -->
-<div class="tab-content on" id="tc-shaft">
-<div class="cl-wrap">
-<div class="cl-head">
-<i class="fas fa-layer-group"></i>
-<h5>শ্যাফট ইন্টেরিয়র ওয়ার্ক — 10টি ইন্সপেকশন পয়েন্ট</h5>
-</div>
-<table class="cl-table">
-<thead>
-<tr>
-<th>#</th>
-<th>পরিদর্শনের কাজ</th>
-<th style="width: 60px; text-align: center">হয়েছে</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>
-                    প্রধান এবং কাউন্টার গাইড রেল তেলের মাত্রা আছে কিনা তা পরীক্ষা করুন
-                    সঠিক, প্রয়োজনে পুনরায় তেল দিন এবং র্যাক প্লেটগুলি যাচাই করুন
-                    জায়গা ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>
-                    প্রতিটি ট্র্যাকশন দড়ির সমান এবং সঠিক টান আছে কিনা তা পরীক্ষা করুন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>3</td>
-<td>সমস্ত নমনীয় তারগুলি স্বাভাবিক অবস্থায় আছে কিনা তা পরীক্ষা করুন ।</td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>স্পিড গভর্নর দড়ি টান সঠিক কিনা তা পরীক্ষা করুন ।</td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>5</td>
-<td>
-                    প্রিলিমিনারি এবং চূড়ান্ত সীমা স্যুইচগুলি কাজ করে কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>6</td>
-<td>
-                    সমস্ত সুরক্ষা কাজ এবং চৌম্বকীয় বারের অবস্থানগুলি পরীক্ষা করে দেখুন
-                    সঠিক ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>7</td>
-<td>
-                    শ্যাফ্ট লাইটিং, বুজজার এবং পিট এরিয়া পরিষ্কার আছে কিনা তা পরীক্ষা করুন এবং
-                    কাজ করছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>8</td>
-<td>
-                    পাল্টা ওজন কোনও অস্বাভাবিক শব্দ করছে কিনা তা পরীক্ষা করুন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>9</td>
-<td>
-                    উপরে থেকে নীচে পর্যন্ত কাউন্টার ওজন রোলারগুলি টাইট কিনা তা পরীক্ষা করুন
-                    এবং সঠিকভাবে মাউন্ট করা ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>10</td>
-<td>প্রধান গাইড জুতো সঠিক অবস্থায় আছে কিনা তা পরীক্ষা করুন ।</td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- LANDING -->
-<div class="tab-content" id="tc-landing">
-<div class="cl-wrap">
-<div class="cl-head">
-<i class="fas fa-door-open"></i>
-<h5>ল্যান্ডিং ডোর ওয়ার্ক — 4টি ইন্সপেকশন পয়েন্ট</h5>
-</div>
-<table class="cl-table">
-<thead>
-<tr>
-<th>#</th>
-<th>পরিদর্শনের কাজ</th>
-<th style="width: 60px; text-align: center">হয়েছে</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>
-                    ল্যান্ডিং ডোর যান্ত্রিক এবং বৈদ্যুতিক যোগাযোগ আছে কিনা তা পরীক্ষা করুন
-                    স্বাভাবিক অপারেটিং অবস্থায় আছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>
-                    দরজার সীলগুলি পরিষ্কার এবং স্বাভাবিক কাজ করছে কিনা তা পরীক্ষা করুন
-                    শর্ত ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>3</td>
-<td>
-                    ল্যান্ডিং ডোর হ্যাঙ্গার রোলার এবং ওপেনিং রোলারগুলি আছে কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে সমন্বয় করা হয়েছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>
-                    দরজার তারযুক্ত দড়ি, দরজার লক এবং দরজার কাছাকাছি অবতরণ করছে কিনা তা পরীক্ষা করে দেখুন
-                    সঠিক অবস্থায় আছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- CABIN -->
-<div class="tab-content" id="tc-cabin">
-<div class="cl-wrap">
-<div class="cl-head">
-<i class="fas fa-cube"></i>
-<h5>কেবিন ও কেবিন ডোর — 10টি ইন্সপেকশন পয়েন্ট</h5>
-</div>
-<table class="cl-table">
-<thead>
-<tr>
-<th>#</th>
-<th>পরিদর্শনের কাজ</th>
-<th style="width: 60px; text-align: center">হয়েছে</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>
-                    ইমার্জেন্সি ব্রেক এবং রিলিজিং রড স্বাভাবিক আছে কিনা তা পরীক্ষা করুন
-                    কাজের অবস্থা ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>
-                    গাইড জুতো পরিষ্কার আছে কিনা এবং পর্যাপ্ত আছে কিনা তা পরীক্ষা করুন
-                    অয়েলিং প্যাডে তেল ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>3</td>
-<td>
-                    ইমার্জেন্সি ব্রেক এবং রিলিজিং রড কাজ করে কিনা তা পরীক্ষা করুন
-                    সাধারণত ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>
-                    ফটোইলেক্ট্রিক সেল সঠিকভাবে কাজ করছে কিনা তা পরীক্ষা করুন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>5</td>
-<td>কেবিনের সীলগুলি পরিষ্কার কিনা তা পরীক্ষা করুন ।</td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>6</td>
-<td>
-                    ডোর মোটর এবং মোটর গিয়ার কাজ করছে কিনা তা পরীক্ষা করুন
-                    সাধারণত । গিয়ার অয়েল লেভেল এবং তৈলাক্তকরণ পরীক্ষা করুন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>7</td>
-<td>
-                    দরজার যোগাযোগ এবং কন্টাক্ট পিনগুলি বৈদ্যুতিক কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে সংযুক্ত ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>8</td>
-<td>
-                    দরজা সিপিইউ ক্যামেরা ভিউ পরিষ্কার এবং ক্যামেরা কিনা তা পরীক্ষা করুন
-                    রোলার সঠিক অবস্থানে আছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>9</td>
-<td>
-                    কেবিন ডোর গাইড জুতো এবং রোলার সঠিক কিনা তা পরীক্ষা করুন
-                    শর্ত ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>10</td>
-<td>
-                    পাওয়ার ব্যর্থতার ক্ষেত্রে, জরুরী ব্যাটারি পরীক্ষা করুন
-                    কেবিনের ভিতরে কাজ করে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- MACHINE ROOM -->
-<div class="tab-content" id="tc-machine">
-<div class="cl-wrap">
-<div class="cl-head">
-<i class="fas fa-industry"></i>
-<h5>মেশিন রুম — 7 ইন্সপেকশন পয়েন্ট</h5>
-</div>
-<table class="cl-table">
-<thead>
-<tr>
-<th>#</th>
-<th>পরিদর্শনের কাজ</th>
-<th style="width: 60px; text-align: center">হয়েছে</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>
-                    কন্ট্রোল বক্সের অভ্যন্তর এবং বহিরাগত অংশগুলি আছে কিনা তা পরীক্ষা করুন
-                    পরিষ্কার ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>
-                    গিয়ার অয়েল লেভেল এবং কোয়ালিটি (সান্দ্রতা) আছে কিনা তা পরীক্ষা করুন
-                    সঠিক স্পেসিফিকেশনের মধ্যে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>3</td>
-<td>গিয়ার অয়েল সীল তেল লিক করছে কিনা তা পরীক্ষা করে দেখুন ।</td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>4</td>
-<td>
-                    প্রধান মোটর এবং গিয়ার কোনও অস্বাভাবিক শব্দ করে কিনা তা পরীক্ষা করুন
-                    অপারেশনের সময় ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>5</td>
-<td>
-                    ওভার স্পিড গভর্নর পরিষ্কার এবং লুব্রিকেটেড কিনা তা পরীক্ষা করুন
-                    যেখানে প্রয়োজন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>6</td>
-<td>
-                    স্পিড গভর্নর রোলার সঠিক অবস্থায় আছে কিনা তা পরীক্ষা করুন ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>7</td>
-<td>
-                    ইমার্জেন্সি কলার ইন্ডিকেটর, ইন্টারকম এবং বুজজার আছে কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে কাজ করে (বিশেষ করে বিদ্যুৎ ব্যর্থতার ক্ষেত্রে) ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- OTHERS -->
-<div class="tab-content" id="tc-others">
-<div class="cl-wrap">
-<div class="cl-head">
-<i class="fas fa-ellipsis-h"></i>
-<h5>অন্যান্য — 2টি ইন্সপেকশন পয়েন্ট</h5>
-</div>
-<table class="cl-table">
-<thead>
-<tr>
-<th>#</th>
-<th>পরিদর্শনের কাজ</th>
-<th style="width: 60px; text-align: center">হয়েছে</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>
-                    প্রতিটি কেবিন এবং ল্যান্ডিং ফ্লোর অপারেশন আছে কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে কাজ করছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>
-                    কেবিন এবং প্রতিটি দরজার বাইরের মেঝে নির্দেশক আছে কিনা তা পরীক্ষা করুন
-                    সঠিকভাবে প্রদর্শন করা হচ্ছে ।
-                  </td>
-<td style="text-align: center">
-<span class="chk" onclick="toggleChk(this)"><i class="fas fa-check"></i></span>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         EMERGENCY BANNER
-    ============================================================ -->
-<section class="emergency-sec">
-<div class="container">
-<div class="em-inner">
-<div class="em-text">
-<h3>
-<i class="fas fa-exclamation-triangle" style="margin-right: 10px"></i>ইমার্জেন্সি লিফ্ট সার্ভিস — উপলভ্য 24/7
-            </h3>
-<p>
-              আমরা এর মধ্যে সাইটে পৌঁছেছি <strong>30 মিনিট</strong> আপনার কল এর
-              — যে কোনও সময়, বছরের যে কোনও দিন ।
-            </p>
-</div>
-<div class="em-btns">
-<a class="btn-white" href="tel:+8801714216666"><i class="fas fa-phone"></i> 01714-216666</a>
-<a class="btn-dark-out" href="https://wa.me/8801714216666?text=Emergency!+I+need+urgent+lift+service" target="_blank"><i class="fab fa-whatsapp"></i> আমাদের WhatsApp</a>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         PRODUCTS
-    ============================================================ -->
-<section class="sec-pad products-sec" id="products">
-<div class="container">
-<div style="max-width: 600px">
-<div class="sec-label">আমরা যা সরবরাহ করি</div>
-<h2 class="sec-title lt">আমাদের পণ্য</h2>
-<p class="sec-desc lt">
-            লিফট, খুচরা যন্ত্রাংশ এবং বৈদ্যুতিক পণ্যের বিস্তৃত পরিসর
-            শীর্ষস্থানীয় আন্তর্জাতিক ব্র্যান্ড থেকে ।
-          </p>
-</div>
-<div class="prod-grid">
-<div class="prod-card">
-<div class="prod-num">01</div>
-<div class="prod-info">
-<h6>কোরিয়ান / ইতালিয়ান ব্র্যান্ড ক্লোন লিফ্ট</h6>
-<p>
-                কোরিয়ান এবং ইতালিয়ান প্রযুক্তির সাথে প্রধান মোটর ক্লোন লিফট
-                নির্ভরযোগ্য, দীর্ঘস্থায়ী কর্মক্ষমতা ।
-              </p>
-</div>
-</div>
-<div class="prod-card">
-<div class="prod-num">02</div>
-<div class="prod-info">
-<h6>রেডিমেড লিফ্ট স্পেয়ার পার্টস (রিটেইল)</h6>
-<p>
-                সমস্ত প্রধান লিফট ব্র্যান্ডের জন্য খুচরা যন্ত্রাংশের বিস্তৃত স্টক —
-                তাৎক্ষণিক খুচরা ক্রয়ের জন্য উপলব্ধ ।
-              </p>
-</div>
-</div>
-<div class="prod-card">
-<div class="prod-num">03</div>
-<div class="prod-info">
-<h6>চাইনিজ ব্র্যান্ড নিউ লিফ্ট</h6>
-<p>
-                নামকরা চীনা নির্মাতাদের কাছ থেকে ব্র্যান্ড নিউ লিফট —
-                আবাসিক এবং বাণিজ্যিক ব্যবহারের জন্য খরচ কার্যকর ।
-              </p>
-</div>
-</div>
-<div class="prod-card">
-<div class="prod-num">04</div>
-<div class="prod-info">
-<h6>বৈদ্যুতিক শক্তি সরঞ্জাম</h6>
-<p>
-                বৈদ্যুতিক পণ্যগুলির সম্পূর্ণ পরিসীমা: স্ট্যাবিলাইজার, ইউ .পি .এস সিস্টেম,
-                আইপিএস, ইনভার্টার, জেনারেটর, ট্রান্সফরমার এবং আরও অনেক কিছু ।
-              </p>
-</div>
-</div>
-</div>
-<div class="elec-list">
-<h5><i class="fas fa-bolt"></i> বৈদ্যুতিক পণ্য যা আমরা বহন করি</h5>
-<div class="elec-grid">
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> AVS/AIVS 1KVA–500KVA
-              স্টেবিলাইজার
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> অফ-লাইন ইউপিএস 1KVA–500KVA /
-              3000VA
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> অন-লাইন ইউ .পি .এস. 650VA–3000VA
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> IPS 400VA–20KVA
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> এসি/ডিসি বৈদ্যুতিন সংকেতের মেরু বদল 1KW–50KW
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সব ধরনের ট্রান্সফরমার
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সব ধরনের স্যুইচ সকেট
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সব ধরনের CFL এনার্জি বাল্ব
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সব ধরনের সার্কিট ব্রেকার
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সব ধরনের HTLT PFI প্যানেল
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> জেনারেটর 20KW–1250KW
-            </div>
-<div class="elec-item">
-<i class="fas fa-check-circle"></i> সাব-স্টেশন 100KVA–2000KVA
-            </div>
-</div>
-</div>
-<p style="
-            color: rgba(255, 255, 255, 0.45);
-            font-size: 13px;
-            margin-top: 18px;
-            text-align: center;
-          ">
-<i class="fas fa-info-circle" style="color: var(--primary); margin-right: 6px"></i>
-          যে কোনও ব্র্যান্ডের লিফ্টগুলি আমাদের দক্ষদের দ্বারা রক্ষণাবেক্ষণ এবং পরিবেশন করা হয়
-          প্রকৌশলী এবং প্রযুক্তিবিদ ।
-        </p>
-</div>
-</section>
-<!-- ============================================================
-         CONTACT
-    ============================================================ -->
-<section class="sec-pad contact-sec" id="contact">
-<div class="container">
-<div style="text-align: center; max-width: 600px; margin: 0 auto">
-<div class="sec-label" style="justify-content: center">
-            যোগাযোগ করুন
-          </div>
-<h2 class="sec-title">আজই আমাদের সাথে যোগাযোগ করুন!</h2>
-<p class="sec-desc">
-            একটি প্রশ্ন আছে বা একটি পরিষেবা উদ্ধৃতি প্রয়োজন? যোগাযোগ করুন এবং আমাদের টিম
-            মিনিটের মধ্যে উত্তর দিন ।
-          </p>
-</div>
-<div class="contact-grid">
-<div class="form-box">
-<h4>একটি মেসেজ পাঠান</h4>
-<div class="f-success" id="mfSuccess">
-<i class="fas fa-check-circle"></i> ধন্যবাদ! আমরা -এ ফিরে আসব
-              আপনি শীঘ্রই ।
-            </div>
-<form onsubmit="doForm(event, 'mfSuccess')">
-<div class="f-row">
-<div class="f-grp">
-<label for="mfName">সম্পূর্ণ নাম *</label><input id="mfName" placeholder="Your full name" required="" type="text"/>
-</div>
-<div class="f-grp">
-<label for="mfPhone">ফোন</label><input id="mfPhone" placeholder="01XXXXXXXXX" required="" type="tel"/>
-</div>
-</div>
-<div class="f-grp">
-<label for="mfEmail">ইমেল</label><input id="mfEmail" placeholder="your@email.com" type="email"/>
-</div>
-<div class="f-grp">
-<label for="mfService">পরিসেবার ধরণ</label>
-<select id="mfService">
-<option value="">একটি পরিষেবা নির্বাচন করুন...</option>
-<option>মাসিক রক্ষণাবেক্ষণ চুক্তি</option>
-<option>জরুরী মেরামত</option>
-<option>লিফ্ট ইনস্টলেশন</option>
-<option>বার্ষিক পরিষেবা চুক্তি</option>
-<option>বৈদ্যুতিক পণ্য</option>
-<option>অন্যান্য</option>
-</select>
-</div>
-<div class="f-grp">
-<label for="mfMsg">মেসেজ</label><textarea id="mfMsg" placeholder="Describe your requirement..." required=""></textarea>
-</div>
-<button class="btn-send" type="submit">
-<i class="fas fa-paper-plane"></i> মেসেজ পাঠান
-              </button>
-</form>
-</div>
-<div class="info-stack">
-<div class="info-card">
-<div class="info-ico"><i class="fas fa-map-marker-alt"></i></div>
-<div class="info-txt">
-<h6>প্রধান কার্যালয়</h6>
-<p>
-                  বারিক বিল্ডিং, ১০ স্ক । মুজিব রোড (২য় তলা), আগ্রাবাদ সি/এ,
-                  চট্টগ্রাম
-                </p>
-</div>
-</div>
-<div class="info-card">
-<div class="info-ico"><i class="fas fa-building"></i></div>
-<div class="info-txt">
-<h6>শাখা অফিস</h6>
-<p>63/1 ভিআইপি রোড, মালিবাগ, ঢাকা-1217</p>
-</div>
-</div>
-<div class="info-card">
-<div class="info-ico"><i class="fas fa-phone"></i></div>
-<div class="info-txt">
-<h6>ফোন</h6>
-<p>
-<a href="tel:+8801714216666">01714-216666</a>  | 
-                  <a href="tel:+8801829984722">01829-984722</a>
-</p>
-</div>
-</div>
-<div class="info-card">
-<div class="info-ico"><i class="fas fa-envelope"></i></div>
-<div class="info-txt">
-<h6>ইমেল</h6>
-<p>
-<a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
-</p>
-</div>
-</div>
-<a class="wa-cta-block" href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+your+services." target="_blank">
-<i class="fab fa-whatsapp"></i>
-<div>
-<strong>হোয়াটসঅ্যাপে চ্যাট করুন</strong><span>দ্রুত প্রতিক্রিয়া — আমরা সাধারণত অনলাইনে থাকি!</span>
-</div>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
-         FOOTER
-    ============================================================ -->
-<footer class="site-footer" id="colophon">
-<div class="ft-top">
-<div class="container">
-<div class="ft-grid">
-<div class="ft-brand">
-<a href="#hero"><img alt="Innovative Engineering" src="assets/images/logo/logo.png"/></a>
-<p>
-                লিফ্ট এবং এস্কেলেটরের জন্য মোট সমাধান । পেশাদার
-                রক্ষণাবেক্ষণ, জরুরী পরিষেবা এবং সম্পূর্ণ লিফট সমাধান
-                বাংলাদেশ জুড়ে ।
-              </p>
-<div class="ft-socials">
-<a class="soc-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-<a class="soc-btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-<a class="soc-btn" href="#"><i class="fab fa-youtube"></i></a>
-<a class="soc-btn" href="https://wa.me/8801714216666" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div>
-</div>
-<div class="ft-widget">
-<h6>যোগাযোগের তথ্য</h6>
-<div class="ft-ci">
-<i class="fas fa-map-marker-alt"></i><span>বারিক বিল্ডিং, ১০ স্ক । মুজিব রোড (2nd Fl.), আগ্রাবাদ সি/এ,
-                  চট্টগ্রাম</span>
-</div>
-<div class="ft-ci">
-<i class="fas fa-building"></i><span>63/1 ভিআইপি রোড, মালিবাগ, ঢাকা-1217</span>
-</div>
-<div class="ft-ci">
-<i class="fas fa-phone"></i>
-<div>
-<a href="tel:+8801714216666">01714-216666</a><br/><a href="tel:+8801829984722">01829-984722</a>
-</div>
-</div>
-<div class="ft-ci">
-<i class="fas fa-envelope"></i><a href="mailto:palash_pe@yahoo.com">palash_pe@yahoo.com</a>
-</div>
-</div>
-<div class="ft-widget">
-<h6>দ্রুত লিঙ্ক</h6>
-<ul class="ft-links">
-<li><a onclick="scrollToSec('hero')">হোম</a></li>
-<li><a onclick="scrollToSec('about')">আমাদের সম্পর্কে</a></li>
-<li><a onclick="scrollToSec('services')">আমাদের সেবাসমূহ</a></li>
-<li>
-<a onclick="scrollToSec('maintenance-checklist')">রক্ষণাবেক্ষণের তালিকা</a>
-</li>
-<li><a onclick="scrollToSec('products')">পণ্য</a></li>
-<li><a onclick="scrollToSec('contact')">আমাদের সাথে যোগাযোগ করুন</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="ft-bot">
-<p>
-            © 2026 <a href="#hero">Innovative Engineering</a>। সর্বস্বত্ব
-            সংরক্ষিত । লিফ্ট এবং এস্কেলেটরের জন্য মোট সমাধান ।
-          </p>
-<div class="ft-bot-links">
-<a href="#">গোপনীয়তা নীতি</a>
-<a href="#">পরিষেবার শর্তাবলী</a>
-<a onclick="scrollToSec('contact')">সহায়তা</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- BACK TO TOP -->
-<button aria-label="Back to top" id="btt">
-<i class="fas fa-angle-up"></i>
-</button>
-<!-- ============================================================
-         WHATSAPP WIDGET
-    ============================================================ -->
-<div class="wa-w">
-<div class="wa-pop" id="waPop">
-<div class="wa-ph">
-<div class="wa-av"><i class="fas fa-hard-hat"></i></div>
-<div class="wa-ph-info">
-<strong>Innovative Engineering</strong>
-<small><span class="wa-dot"></span> অনলাইন — মিনিটের মধ্যে উত্তর</small>
-</div>
-<button class="wa-x" id="waX"><i class="fas fa-times"></i></button>
-</div>
-<div class="wa-pb">
-<div class="wa-bubble">
-            👋 হ্যালো! স্বাগতম
-            <strong>Innovative Engineering</strong>.<br/><br/>
-            আমরা কীভাবে আপনাকে সাহায্য করতে পারি? লিফট রক্ষণাবেক্ষণ সম্পর্কে আমাদের একটি বার্তা পাঠান,
-            জরুরী পরিষেবা, বা পণ্য অনুসন্ধান ।
-          </div>
-<div class="wa-inp">
-<span>মেসেজ টাইপ করুন</span>
-<a class="wa-send" href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+help." target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div>
-<a class="wa-full" href="https://wa.me/8801714216666?text=Hello+Innovative+Engineering!+I+need+your+services." target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp চ্যাট শুরু করুন</a>
-</div>
-</div>
-<button class="wa-fab" id="waFab"><i class="fab fa-whatsapp"></i></button>
-</div>
-<!-- CONTACT SIDEBAR TAB -->
-<!-- <div class="sb-overlay" id="sbOverlay"></div>
-    <button class="sb-tab" onclick="openSidebar()">
-      <i class="fas fa-envelope" style="font-size: 11px"></i> Quick Contact
-    </button>
-    <div class="sb-panel" id="sbPanel">
-      <div class="sb-hd">
-        <h4>Quick Contact</h4>
-        <p>Send us a quick message — we respond within minutes.</p>
-        <button class="sb-x" onclick="closeSidebar()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="sb-body">
-        <div class="f-success" id="sfSuccess">
-          <i class="fas fa-check-circle"></i> Message sent! We'll contact you
-          shortly.
-        </div>
-        <form onsubmit="doForm(event, 'sfSuccess')">
-          <div class="f-grp">
-            <label for="sfName">Your Name *</label
-            ><input type="text" id="sfName" placeholder="Full name" required />
-          </div>
-          <div class="f-grp">
-            <label for="sfPhone">Phone *</label
-            ><input
-              type="tel"
-              id="sfPhone"
-              placeholder="01XXXXXXXXX"
-              required
-            />
-          </div>
-          <div class="f-grp">
-            <label for="sfEmail">Email</label
-            ><input type="email" id="sfEmail" placeholder="your@email.com" />
-          </div>
-          <div class="f-grp">
-            <label for="sfMsg">Message *</label
-            ><textarea
-              id="sfMsg"
-              placeholder="How can we help you?"
-              style="min-height: 100px"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn-send">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-        <div class="sb-ci">
-          <h6>Or reach us directly</h6>
-          <a href="tel:+8801714216666" class="sb-ql"
-            ><i class="fas fa-phone"></i> 01714-216666</a
-          >
-          <a href="tel:+8801829984722" class="sb-ql"
-            ><i class="fas fa-phone"></i> 01829-984722</a
-          >
-          <a href="mailto:palash_pe@yahoo.com" class="sb-ql"
-            ><i class="fas fa-envelope"></i> palash_pe@yahoo.com</a
-          >
-          <a
-            href="https://wa.me/8801714216666"
-            target="_blank"
-            class="sb-ql"
-            style="background: #25d366; color: #fff"
-            ><i class="fab fa-whatsapp" style="color: #fff"></i> Chat on
-            WhatsApp</a
-          >
-        </div>
-      </div>
-    </div> -->
-<!-- ============================================================
-         SCRIPTS
-    ============================================================ -->
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-      /* ---- Preloader ---- */
-      window.addEventListener("load", () => {
-        setTimeout(
-          () => document.getElementById("ie-load").classList.add("done"),
-          700,
-        );
-      });
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ইনোভেটিভ ইঞ্জিনিয়ারিং — লিফট ও এস্কেলেটর সলিউশন" />
+    <meta property="og:description" content="নতুন লিফট স্থাপন, মেরামত, মাসিক রক্ষণাবেক্ষণ ও যন্ত্রাংশ সরবরাহ — সারা বাংলাদেশে।" />
+    <meta property="og:image" content="assets/images/lift/hero-glass-lift.jpg" />
 
-      /* ---- Hero Swiper ---- */
-      const heroSwiper = new Swiper("#heroSwiper", {
-        loop: true,
-        speed: 900,
-        autoplay: { delay: 5500, disableOnInteraction: false },
-        effect: "fade",
-        fadeEffect: { crossFade: true },
-        on: {
-          slideChange() {
-            const n = String(this.realIndex + 1).padStart(2, "0");
-            document.getElementById("slideNum").textContent = n;
-          },
-        },
-      });
-      document
-        .getElementById("heroPrev")
-        .addEventListener("click", () => heroSwiper.slidePrev());
-      document
-        .getElementById("heroNext")
-        .addEventListener("click", () => heroSwiper.slideNext());
-
-      /* ---- SPA Sections list (for scroll spy) ---- */
-      const sections = [
-        "hero",
-        "about",
-        "services",
-        "maintenance-checklist",
-        "products",
-        "contact",
-      ];
-
-      /* ---- Sticky Header + Scroll Spy ---- */
-      const hdr = document.getElementById("hdr");
-      const btt = document.getElementById("btt");
-
-      function updateActiveLink() {
-        let current = "hero";
-        sections.forEach((id) => {
-          const el = document.getElementById(id);
-          if (el && window.scrollY >= el.offsetTop - 120) current = id;
-        });
-        document.querySelectorAll("[data-section]").forEach((a) => {
-          a.classList.toggle("active", a.dataset.section === current);
-        });
-      }
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 60) hdr.classList.add("scrolled");
-        else hdr.classList.remove("scrolled");
-        btt.classList.toggle("on", window.scrollY > 300);
-        updateActiveLink();
-      });
-
-      /* ---- Smooth Scroll helper ---- */
-      function scrollToSec(id) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        window.scrollTo({ top: el.offsetTop - 80, behavior: "smooth" });
-      }
-
-      /* ---- SPA Nav links (hash anchors) ---- */
-      document.querySelectorAll("[data-section]").forEach((a) => {
-        a.addEventListener("click", (e) => {
-          e.preventDefault();
-          const id = a.dataset.section;
-          scrollToSec(id);
-          closeOC();
-        });
-      });
-
-      /* ---- Back To Top ---- */
-      btt.addEventListener("click", () =>
-        window.scrollTo({ top: 0, behavior: "smooth" }),
-      );
-
-      /* ---- Mobile Offcanvas ---- */
-      const hamBtn = document.getElementById("hamBtn");
-      const ocOverlay = document.getElementById("ocOverlay");
-      const ocPanel = document.getElementById("ocPanel");
-      function openOC() {
-        ocPanel.classList.add("on");
-        ocOverlay.classList.add("on");
-        document.body.style.overflow = "hidden";
-      }
-      function closeOC() {
-        ocPanel.classList.remove("on");
-        ocOverlay.classList.remove("on");
-        document.body.style.overflow = "";
-      }
-      hamBtn.addEventListener("click", openOC);
-      document.getElementById("ocClose").addEventListener("click", closeOC);
-      ocOverlay.addEventListener("click", closeOC);
-
-      /* ---- Checklist Tabs ---- */
-      function showTab(name, btn) {
-        document
-          .querySelectorAll(".tab-content")
-          .forEach((t) => t.classList.remove("on"));
-        document
-          .querySelectorAll(".tab-btn")
-          .forEach((b) => b.classList.remove("on"));
-        document.getElementById("tc-" + name).classList.add("on");
-        btn.classList.add("on");
-      }
-      function toggleChk(el) {
-        el.classList.toggle("done");
-      }
-
-      /* ---- WhatsApp Widget ---- */
-      const waPop = document.getElementById("waPop");
-      const waFab = document.getElementById("waFab");
-      let waOpen = false;
-      function toggleWA() {
-        waOpen = !waOpen;
-        waPop.classList.toggle("on", waOpen);
-      }
-      waFab.addEventListener("click", toggleWA);
-      document.getElementById("waX").addEventListener("click", (e) => {
-        e.stopPropagation();
-        waOpen = false;
-        waPop.classList.remove("on");
-      });
-      setTimeout(() => {
-        if (!waOpen) {
-          waOpen = true;
-          waPop.classList.add("on");
-        }
-      }, 3500);
-
-
-
-      /* ---- Form Submit (demo) ---- */
-      function doForm(e, successId) {
-        e.preventDefault();
-        const btn = e.target.querySelector("[type=submit]");
-        const orig = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        btn.disabled = true;
-        setTimeout(() => {
-          btn.innerHTML = orig;
-          btn.disabled = false;
-          const s = document.getElementById(successId);
-          s.classList.add("show");
-          e.target.reset();
-          setTimeout(() => s.classList.remove("show"), 5000);
-        }, 1400);
-      }
-
-      /* ---- Intersection Observer — fade in cards ---- */
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((en) => {
-            if (en.isIntersecting) {
-              en.target.style.opacity = "1";
-              en.target.style.transform = "translateY(0)";
-              obs.unobserve(en.target);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
-
-      document
-        .querySelectorAll(
-          ".svc-card,.prod-card,.info-card,.feat-item,.elec-item",
-        )
-        .forEach((el) => {
-          el.style.cssText +=
-            "opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease";
-          obs.observe(el);
-        });
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
     </script>
-</body>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Innovative Engineering",
+        "alternateName": "ইনোভেটিভ ইঞ্জিনিয়ারিং",
+        "description": "লিফট ও এস্কেলেটরের সম্পূর্ণ সমাধান — স্থাপন, মেরামত, রক্ষণাবেক্ষণ ও যন্ত্রাংশ।",
+        "image": "assets/images/logo/logo.png",
+        "telephone": ["+8801714216666", "+8801829984722"],
+        "email": "palash_pe@yahoo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Barik Building, 10 Sk. Mujib Road (2nd Floor), Agrabad C/A",
+          "addressLocality": "Chattogram",
+          "addressCountry": "BD"
+        },
+        "openingHours": "Mo-Su 00:00-23:59"
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- LOADER -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__door loader__door--l"></div>
+      <div class="loader__door loader__door--r"></div>
+      <div class="loader__panel">
+        <img src="assets/images/logo/logo.png" alt="" />
+        <div class="loader__display"><i class="fas fa-caret-down"></i><span id="loaderFloor">5</span></div>
+      </div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="hdr" id="hdr">
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar__info">
+            <a href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i>01714-216666</a>
+            <a href="mailto:palash_pe@yahoo.com" data-link="email"><i class="fas fa-envelope"></i>palash_pe@yahoo.com</a>
+            <span><i class="fas fa-location-dot"></i>আগ্রাবাদ, চট্টগ্রাম · মালিবাগ, ঢাকা</span>
+          </div>
+          <div class="topbar__right">
+            <span class="topbar__live">২৪/৭ জরুরি সেবা</span>
+            <div class="lang" aria-label="ভাষা">
+              <a href="index.html" lang="en">EN</a>
+              <a href="index-bn.html" class="is-active" lang="bn">বাংলা</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="container">
+          <a href="#home" class="brand" aria-label="ইনোভেটিভ ইঞ্জিনিয়ারিং — হোম">
+            <img src="assets/images/logo/logo.png" alt="ইনোভেটিভ ইঞ্জিনিয়ারিং লোগো" width="52" height="52" />
+            <span class="brand__txt"><strong>ইনোভেটিভ ইঞ্জিনিয়ারিং</strong><small>লিফট ও এস্কেলেটর সলিউশন</small></span>
+          </a>
+
+          <nav aria-label="প্রধান মেনু">
+            <ul class="menu">
+              <li><a href="#home">হোম</a></li>
+              <li><a href="#about">আমাদের সম্পর্কে</a></li>
+              <li><a href="#services">আমাদের সেবাসমূহ</a></li>
+              <li><a href="#products">পণ্যের তালিকা</a></li>
+              <li><a href="#projects">আমাদের কাজসমূহ</a></li>
+              <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav__cta">
+            <a href="#contact" class="btn btn--sm"><i class="fas fa-paper-plane"></i> দাম জানুন</a>
+            <a href="index.html" class="lang-m" lang="en" aria-label="View in English">EN</a>
+            <button class="ham" id="ham" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="mMenu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="progress" aria-hidden="true"></div>
+    </header>
+
+    <!-- Mobile menu (☰) -->
+    <nav class="m-menu" id="mMenu" aria-label="মোবাইল মেনু">
+      <ul>
+        <li><a href="#home" style="--i: 0"><i class="fas fa-house"></i>হোম</a></li>
+        <li><a href="#about" style="--i: 1"><i class="fas fa-building"></i>আমাদের সম্পর্কে</a></li>
+        <li><a href="#services" style="--i: 2"><i class="fas fa-screwdriver-wrench"></i>আমাদের সেবাসমূহ</a></li>
+        <li><a href="#products" style="--i: 3"><i class="fas fa-elevator"></i>পণ্যের তালিকা</a></li>
+        <li><a href="#projects" style="--i: 4"><i class="fas fa-images"></i>আমাদের কাজসমূহ</a></li>
+        <li><a href="#contact" style="--i: 5"><i class="fas fa-phone"></i>যোগাযোগ</a></li>
+      </ul>
+      <div class="m-menu__foot">
+        <a href="tel:+8801714216666" class="btn btn--navy btn--block" data-link="call"><i class="fas fa-phone"></i> কল করুন 01714-216666</a>
+        <a href="https://wa.me/8801714216666" class="btn btn--wa btn--block" data-link="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp করুন</a>
+        <div class="lang">
+          <a href="index.html" lang="en">EN</a>
+          <a href="index-bn.html" class="is-active" lang="bn">বাংলা</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero" data-floor="G" data-name="হোম">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="slide is-active" style="background-image: url('assets/images/lift/hero-glass-lift.jpg')"></div>
+          <div class="slide" data-bg="assets/images/lift/hero-lift-lobby.jpg"></div>
+          <div class="slide" data-bg="assets/images/lift/hero-escalator.jpg"></div>
+        </div>
+        <div class="hero__grid" aria-hidden="true"></div>
+
+        <div class="hero__main">
+          <div class="container">
+            <div>
+              <div class="hero__badge" data-reveal="up"><i class="fas fa-shield-halved"></i> লিফট ও এস্কেলেটরের সম্পূর্ণ সমাধান</div>
+              <h1 data-reveal="up" style="--d: 0.1s">
+                নিরাপদ, মসৃণ ও নির্ভরযোগ্য <span class="accent">লিফট ও এস্কেলেটর</span>
+              </h1>
+              <p class="hero__rotator" data-reveal="up" style="--d: 0.2s">
+                বাসাবাড়ি, অফিস, হাসপাতাল ও শপিং মলের জন্য আমরা করি
+                <span
+                  class="rotator"
+                  data-words='["নতুন লিফট স্থাপন","পুরাতন লিফট মেরামত","মাসিক রক্ষণাবেক্ষণ","যন্ত্রাংশ সরবরাহ","এস্কেলেটর স্থাপন"]'
+                  ><span>নতুন লিফট স্থাপন</span></span
+                >
+                — সারা বাংলাদেশে।
+              </p>
+              <ul class="hero__chips" data-reveal="up" style="--d: 0.3s">
+                <li><i class="fas fa-elevator"></i>নতুন লিফট স্থাপন</li>
+                <li><i class="fas fa-screwdriver-wrench"></i>লিফট মেরামত ও সার্ভিসিং</li>
+                <li><i class="fas fa-calendar-check"></i>নিয়মিত রক্ষণাবেক্ষণ</li>
+                <li><i class="fas fa-gears"></i>লিফটের যন্ত্রাংশ সরবরাহ</li>
+              </ul>
+              <div class="hero__btns" data-reveal="up" style="--d: 0.4s">
+                <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> যোগাযোগ করুন</a>
+                <a href="tel:+8801714216666" class="btn btn--ghost" data-link="call"><i class="fas fa-phone"></i> 01714-216666</a>
+              </div>
+            </div>
+
+            <!-- Animated lift shaft -->
+            <div class="shaft-wrap" aria-hidden="true">
+              <div class="shaft" data-reveal="zoom" style="--d: 0.35s">
+                <div class="shaft__display"><i id="liftArrow" class="fas fa-caret-up is-idle"></i><span id="liftFloor">G</span></div>
+                <div class="shaft__body">
+                  <ul class="shaft__floors">
+                    <li><span>5</span></li>
+                    <li><span>4</span></li>
+                    <li><span>3</span></li>
+                    <li><span>2</span></li>
+                    <li><span>1</span></li>
+                    <li><span>G</span></li>
+                  </ul>
+                  <div class="shaft__rail shaft__rail--l"></div>
+                  <div class="shaft__rail shaft__rail--r"></div>
+                  <div class="shaft__cw"></div>
+                  <div class="shaft__car" id="liftCar">
+                    <div class="shaft__cabin">
+                      <i class="fas fa-user-group"></i>
+                      <div class="shaft__door shaft__door--l"></div>
+                      <div class="shaft__door shaft__door--r"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shaft__base"></div>
+                <p class="shaft__caption">মসৃণ চলাচল · নিখুঁত লেভেলিং</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__stats">
+          <div class="container">
+            <div class="stat"><i class="fas fa-clock"></i><div><strong>24/7</strong><span>জরুরি সেবা</span></div></div>
+            <div class="stat"><i class="fas fa-bolt"></i><div><strong data-count="30" data-suffix=" মিনিট">30 মিনিট</strong><span>সাড়া দেওয়ার সময়</span></div></div>
+            <div class="stat"><i class="fas fa-elevator"></i><div><strong data-count="100" data-suffix="+">100+</strong><span>লিফট রক্ষণাবেক্ষণ</span></div></div>
+            <div class="stat"><i class="fas fa-award"></i><div><strong data-count="15" data-suffix="+">15+</strong><span>বছরের অভিজ্ঞতা</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="sec" data-floor="1" data-name="আমাদের সম্পর্কে">
+        <div class="container about-grid">
+          <div class="about-media" data-reveal="left">
+            <div class="about-media__main door-reveal">
+              <img src="assets/images/lift/lift-interior-classic.jpg" alt="বাণিজ্যিক ভবনে স্থাপিত আধুনিক এস্কেলেটর" loading="lazy" />
+            </div>
+            <div class="about-media__sub door-reveal" style="--d: 0.25s">
+              <img src="assets/images/lift/lift-call-button.jpg" alt="লিফটের কন্ট্রোল প্যানেল" loading="lazy" />
+            </div>
+            <div class="about-badge">
+              <strong data-count="15" data-suffix="+">15+</strong>
+              <span>বছরের<br />অভিজ্ঞতা</span>
+            </div>
+          </div>
+
+          <div data-reveal="right">
+            <span class="floor-tag"><b>01</b> আমাদের সম্পর্কে</span>
+            <h2 class="sec-title">লিফট ও এস্কেলেটরে <span>আপনার বিশ্বস্ত সঙ্গী</span></h2>
+            <p class="sec-desc">
+              ইনোভেটিভ ইঞ্জিনিয়ারিং একটি পূর্ণাঙ্গ লিফট ও এস্কেলেটর প্রতিষ্ঠান। আমরা নতুন লিফট বিক্রয় ও স্থাপন করি,
+              পুরাতন লিফট মেরামত করি, প্রতি মাসে রক্ষণাবেক্ষণ করি এবং যন্ত্রাংশ সরবরাহ করি — তাই ভবন মালিকদের
+              একটি বিশ্বস্ত টিমই যথেষ্ট।
+            </p>
+            <ul class="about-list">
+              <li>
+                <i class="fas fa-user-gear"></i>
+                <div>
+                  <h4>দক্ষ প্রকৌশলী ও টেকনিশিয়ান</h4>
+                  <p>সব ব্র্যান্ড ও মডেলের লিফটে কাজ করার অভিজ্ঞ টিম।</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <h4>চট্টগ্রাম ও ঢাকায় অফিস</h4>
+                  <p>প্রধান কার্যালয় আগ্রাবাদ, চট্টগ্রাম এবং শাখা অফিস মালিবাগ, ঢাকা।</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                  <h4>নিরাপত্তাই প্রথম</h4>
+                  <p>প্রতিটি যান্ত্রিক, বৈদ্যুতিক ও নিরাপত্তা যন্ত্রাংশ পরীক্ষা করে রেকর্ড রাখা হয়।</p>
+                </div>
+              </li>
+            </ul>
+            <div class="about-sign">
+              <a href="#services" class="btn btn--navy">আমাদের সেবাসমূহ <i class="fas fa-arrow-right"></i></a>
+              <a href="tel:+8801714216666" class="about-call" data-link="call">
+                <i class="fas fa-phone"></i>
+                <span><small>যেকোনো সময় কল করুন</small><strong>01714-216666</strong></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section id="services" class="sec sec--grey" data-floor="2" data-name="আমাদের সেবাসমূহ">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>02</b> আমাদের সেবাসমূহ</span>
+            <h2 class="sec-title">আপনার লিফটের সব প্রয়োজন, <span>এক জায়গায়</span></h2>
+            <p class="sec-desc">নতুন লিফট স্থাপন থেকে শুরু করে মাসিক রক্ষণাবেক্ষণ ও জরুরি মেরামত — সব কাজ আমরাই করি।</p>
+          </div>
+
+          <div class="svc-grid">
+            <article class="svc" data-reveal="up">
+              <div class="svc__img door-reveal"><span class="svc__num">01</span><img src="assets/images/lift/lobby-modern.jpg" alt="নতুন লিফট স্থাপন" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-elevator"></i></div>
+                <h3>নতুন লিফট স্থাপন ও বিক্রয়</h3>
+                <p>বাসাবাড়ি, অ্যাপার্টমেন্ট, অফিস, হাসপাতাল ও কারখানার জন্য নতুন লিফট সরবরাহ ও স্থাপন।</p>
+                <button class="link-arrow" type="button" data-service="install">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.1s">
+              <div class="svc__img door-reveal" style="--d: 0.1s"><span class="svc__num">02</span><img src="assets/images/lift/escalator-twin.jpg" alt="এস্কেলেটর স্থাপন" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-stairs"></i></div>
+                <h3>এস্কেলেটর স্থাপন ও বিক্রয়</h3>
+                <p>শপিং মল, বাণিজ্যিক ভবন ও জনসমাগমস্থলের জন্য এস্কেলেটর।</p>
+                <button class="link-arrow" type="button" data-service="escalator">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.2s">
+              <div class="svc__img door-reveal" style="--d: 0.2s"><span class="svc__num">03</span><img src="assets/images/lift/roller-guide.jpg" alt="লিফট মেরামত ও সার্ভিসিং" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-screwdriver-wrench"></i></div>
+                <h3>পুরাতন লিফট মেরামত ও সার্ভিসিং</h3>
+                <p>লিফটে শব্দ, ঝাঁকুনি বা বারবার বন্ধ হয়ে যাওয়া? সব ব্র্যান্ড ও মডেলের লিফট মেরামত করি।</p>
+                <button class="link-arrow" type="button" data-service="repair">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up">
+              <div class="svc__img door-reveal"><span class="svc__num">04</span><img src="assets/images/lift/lift-car-panel.jpg" alt="মাসিক লিফট রক্ষণাবেক্ষণ" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-calendar-check"></i></div>
+                <h3>মাসিক চুক্তিতে রক্ষণাবেক্ষণ</h3>
+                <p>প্রতি মাসে নির্ধারিত ভিজিট, পূর্ণ নিরাপত্তা চেকলিস্ট ও লিখিত রিপোর্ট।</p>
+                <button class="link-arrow" type="button" data-service="amc">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.1s">
+              <div class="svc__img door-reveal" style="--d: 0.1s"><span class="svc__num">05</span><img src="assets/images/lift/lift-buttons.jpg" alt="লিফটের যন্ত্রাংশ" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-gears"></i></div>
+                <h3>লিফটের যন্ত্রাংশ সরবরাহ</h3>
+                <p>কন্ট্রোল বোর্ড, ডোরের যন্ত্রাংশ, রোপ, বাটন, ডিসপ্লেসহ সব যন্ত্রাংশ রেডি স্টকে।</p>
+                <button class="link-arrow" type="button" data-service="parts">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+            <article class="svc" data-reveal="up" style="--d: 0.2s">
+              <div class="svc__img door-reveal" style="--d: 0.2s"><span class="svc__num">06</span><img src="assets/images/lift/lift-doors-steel.jpg" alt="লিফটের সমস্যা নির্ণয়" loading="lazy" /></div>
+              <div class="svc__body">
+                <div class="svc__ico"><i class="fas fa-stethoscope"></i></div>
+                <h3>সমস্যা নির্ণয় ও কারিগরি সহায়তা</h3>
+                <p>আমাদের প্রকৌশলীরা সমস্যার আসল কারণ খুঁজে বের করে সঠিক সমাধান দেন।</p>
+                <button class="link-arrow" type="button" data-service="diagnosis">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRODUCTS ================= -->
+      <section id="products" class="sec" data-floor="3" data-name="পণ্যের তালিকা">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>03</b> পণ্যের তালিকা</span>
+            <h2 class="sec-title">লিফট, এস্কেলেটর ও <span>যন্ত্রাংশ</span></h2>
+            <p class="sec-desc">একটি বিভাগ বেছে নিন, তারপর যেকোনো পণ্যে ট্যাপ করে বিস্তারিত দেখুন। দাম জানতে মেসেজ দিন — দ্রুত উত্তর পাবেন।</p>
+          </div>
+          <div class="filters" id="prodFilters" role="toolbar" aria-label="পণ্যের বিভাগ"></div>
+          <div class="prod-grid" id="prodGrid" aria-live="polite"></div>
+          <p class="note" data-reveal="up">
+            <i class="fas fa-circle-info"></i> অনলাইনে টাকা পরিশোধের প্রয়োজন নেই — আমাদের মেসেজ দিন, আপনার ভবনের জন্য সেরা দাম জানিয়ে দেব।
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= OUR WORKS ================= -->
+      <section id="projects" class="sec sec--grey" data-floor="4" data-name="আমাদের কাজসমূহ">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>04</b> আমাদের কাজসমূহ</span>
+            <h2 class="sec-title">যেসব লিফট আমরা <span>স্থাপন ও সার্ভিসিং</span> করেছি</h2>
+            <p class="sec-desc">বিভিন্ন ভবন, বাসাবাড়ি ও প্রতিষ্ঠানে আমাদের টিমের স্থাপন ও রক্ষণাবেক্ষণ করা লিফটের কিছু ছবি।</p>
+          </div>
+          <div class="filters" id="projFilters" role="toolbar" aria-label="কাজের ধরন"></div>
+          <!-- Gallery items come from assets/js/data.js → projects -->
+          <div class="proj-grid" id="projGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= WHY CHOOSE US ================= -->
+      <section id="why" class="sec sec--navy why" data-floor="5" data-name="কেন আমরা">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>05</b> কেন আমাদের বেছে নেবেন</span>
+            <h2 class="sec-title">কেন ভবন মালিকরা <span>আমাদের বেছে নেন</span></h2>
+            <p class="sec-desc">যে ছয়টি কারণে গ্রাহকরা বছরের পর বছর আমাদের ওপর আস্থা রাখেন।</p>
+          </div>
+          <div class="why-grid">
+            <div class="why-card" data-reveal="up">
+              <span class="why-card__no">01</span>
+              <div class="why-card__ico"><i class="fas fa-user-gear"></i></div>
+              <h3>অভিজ্ঞ কারিগরি কর্মী</h3>
+              <p>প্রধান সব ব্র্যান্ডের লিফট সম্পর্কে দক্ষ ও প্রশিক্ষিত প্রকৌশলী।</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.1s">
+              <span class="why-card__no">02</span>
+              <div class="why-card__ico"><i class="fas fa-award"></i></div>
+              <h3>উন্নতমানের লিফট ও যন্ত্রাংশ</h3>
+              <p>নির্ভরযোগ্য লিফট এবং পরীক্ষিত আসল যন্ত্রাংশ।</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.2s">
+              <span class="why-card__no">03</span>
+              <div class="why-card__ico"><i class="fas fa-calendar-check"></i></div>
+              <h3>নিয়মিত রক্ষণাবেক্ষণ</h3>
+              <p>মাসিক সার্ভিস প্ল্যান, যা ব্রেকডাউন হওয়ার আগেই সমস্যা ঠেকায়।</p>
+            </div>
+            <div class="why-card" data-reveal="up">
+              <span class="why-card__no">04</span>
+              <div class="why-card__ico"><i class="fas fa-bolt"></i></div>
+              <h3>দ্রুত সার্ভিস</h3>
+              <p>জরুরি কলের ৩০ মিনিটের মধ্যে সাইটে উপস্থিতি — ২৪ ঘণ্টা, ৩৬৫ দিন।</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.1s">
+              <span class="why-card__no">05</span>
+              <div class="why-card__ico"><i class="fas fa-handshake"></i></div>
+              <h3>বিক্রয়-পরবর্তী সেবা</h3>
+              <p>স্থাপনের পরও সার্ভিস, যন্ত্রাংশ ও পরামর্শ দিয়ে আমরা আপনার পাশে থাকি।</p>
+            </div>
+            <div class="why-card" data-reveal="up" style="--d: 0.2s">
+              <span class="why-card__no">06</span>
+              <div class="why-card__ico"><i class="fas fa-shield-heart"></i></div>
+              <h3>নিরাপত্তা ও সন্তুষ্টি</h3>
+              <p>যাত্রীর নিরাপত্তা ও আপনার নিশ্চিন্ত থাকা আমাদের প্রথম অগ্রাধিকার।</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MONTHLY SERVICING ================= -->
+      <section id="maintenance" class="sec sec--grey" data-floor="6" data-name="মাসিক সার্ভিসিং">
+        <div class="container">
+          <div class="amc-top">
+            <div data-reveal="left">
+              <span class="floor-tag"><b>06</b> মাসিক সার্ভিসিং</span>
+              <h2 class="sec-title">ভবনে লিফট আছে? <span>দেখভালের দায়িত্ব আমাদের</span></h2>
+              <p class="sec-desc">
+                মাসিক সার্ভিসিং চুক্তিতে আমাদের টেকনিশিয়ানরা নির্ধারিত সময়ে এসে প্রতিটি যন্ত্রাংশ পরীক্ষা করেন এবং ছোট
+                সমস্যা বড় ব্রেকডাউনে পরিণত হওয়ার আগেই সমাধান করেন।
+              </p>
+              <ul class="benefits">
+                <li><i class="fas fa-arrow-trend-down"></i>ব্রেকডাউন কম হয়</li>
+                <li><i class="fas fa-shield-halved"></i>সবার জন্য নিরাপদ যাতায়াত</li>
+                <li><i class="fas fa-hourglass-half"></i>লিফটের আয়ু বাড়ে</li>
+                <li><i class="fas fa-truck-fast"></i>অগ্রাধিকার ভিত্তিতে জরুরি সেবা</li>
+                <li><i class="fas fa-file-lines"></i>প্রতি ভিজিটে লিখিত রিপোর্ট</li>
+                <li><i class="fas fa-wallet"></i>নির্দিষ্ট মাসিক খরচ</li>
+              </ul>
+            </div>
+
+            <div class="plan" data-reveal="right">
+              <span class="plan__ribbon">যেকোনো ব্র্যান্ডের লিফটের জন্য</span>
+              <h3>মাসিক রক্ষণাবেক্ষণ চুক্তি</h3>
+              <p>অ্যাপার্টমেন্ট, অফিস, হাসপাতাল, কারখানা ও শপিং মলের জন্য।</p>
+              <ul>
+                <li><i class="fas fa-check"></i>প্রতি মাসে নির্ধারিত সময়ে দক্ষ টেকনিশিয়ানের ভিজিট</li>
+                <li><i class="fas fa-check"></i><span><span data-chk-total>30+</span> পয়েন্টে পুরো লিফট পরীক্ষা</span></li>
+                <li><i class="fas fa-check"></i>পরিষ্কার, লুব্রিকেশন ও অ্যাডজাস্টমেন্ট</li>
+                <li><i class="fas fa-check"></i>ছোটখাটো মেরামত ও যন্ত্রাংশ বিষয়ে পরামর্শ</li>
+                <li><i class="fas fa-check"></i>২৪/৭ — ৩০ মিনিটে জরুরি সেবা</li>
+                <li><i class="fas fa-check"></i>মাসিক সার্ভিস রিপোর্ট</li>
+              </ul>
+              <div class="plan__btns">
+                <a class="btn btn--wa" href="https://wa.me/8801714216666" data-link="whatsapp" data-text="আসসালামু আলাইকুম! আমার লিফটের জন্য মাসিক রক্ষণাবেক্ষণ চুক্তি করতে চাই।" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> চুক্তির জন্য যোগাযোগ</a>
+                <a class="btn btn--ghost" href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i> কল করুন 01714-216666</a>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sub-head" data-reveal="up">প্রতি মাসে আমরা যা পরীক্ষা করি</h3>
+          <div class="chk-wrap" data-reveal="up">
+            <div class="chk-tabs" id="chkTabs" role="tablist" aria-label="পরিদর্শনের অংশ"></div>
+            <div class="chk-panel" id="chkPanel" role="tabpanel"></div>
+          </div>
+
+          <h3 class="sub-head" data-reveal="up">কীভাবে চুক্তি করবেন</h3>
+          <div class="steps">
+            <div class="steps__line" aria-hidden="true"></div>
+            <div class="step" style="--i: 0">
+              <div class="step__ico"><i class="fas fa-phone-volume"></i></div>
+              <h4>যোগাযোগ করুন</h4>
+              <p>কল, WhatsApp বা নিচের ফর্মের মাধ্যমে।</p>
+            </div>
+            <div class="step" style="--i: 1">
+              <div class="step__ico"><i class="fas fa-magnifying-glass"></i></div>
+              <h4>বিনামূল্যে সাইট পরিদর্শন</h4>
+              <p>আমাদের প্রকৌশলী আপনার লিফটের অবস্থা দেখবেন।</p>
+            </div>
+            <div class="step" style="--i: 2">
+              <div class="step__ico"><i class="fas fa-file-signature"></i></div>
+              <h4>চুক্তি স্বাক্ষর</h4>
+              <p>মাসিক ফি ও ভিজিটের সময়সূচি ঠিক করা হবে।</p>
+            </div>
+            <div class="step" style="--i: 3">
+              <div class="step__ico"><i class="fas fa-screwdriver-wrench"></i></div>
+              <h4>নিয়মিত সার্ভিসিং</h4>
+              <p>মাসিক ভিজিট, রিপোর্ট ও জরুরি সহায়তা।</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EMERGENCY BAND ================= -->
+      <div class="emg">
+        <div class="container">
+          <div class="emg__l" data-reveal="left">
+            <div class="emg__ico"><i class="fas fa-phone"></i></div>
+            <div>
+              <h3>লিফট আটকে গেছে বা চলছে না?</h3>
+              <p>আমাদের জরুরি টিম <strong>৩০ মিনিটের</strong> মধ্যে পৌঁছে যায় — দিন-রাত, সারা বছর।</p>
+            </div>
+          </div>
+          <div class="emg__btns" data-reveal="right">
+            <a href="tel:+8801714216666" class="btn btn--white" data-link="call"><i class="fas fa-phone"></i> 01714-216666</a>
+            <a href="https://wa.me/8801714216666" class="btn btn--ghost" data-link="whatsapp" data-text="জরুরি! আমার লিফটে দ্রুত সার্ভিস প্রয়োজন।" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="sec" data-floor="7" data-name="যোগাযোগ">
+        <div class="container">
+          <div class="sec-head" data-reveal="up">
+            <span class="floor-tag"><b>07</b> যোগাযোগ</span>
+            <h2 class="sec-title">আপনার লিফট নিয়ে <span>কথা বলুন</span></h2>
+            <p class="sec-desc">দাম জানতে, সাইট পরিদর্শন বুক করতে বা সমস্যা জানাতে যোগাযোগ করুন — সাধারণত কয়েক মিনিটের মধ্যেই উত্তর দিই।</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="c-cards">
+              <a class="c-card" href="tel:+8801714216666" data-link="call" data-reveal="up">
+                <span class="c-card__ico"><i class="fas fa-phone"></i></span>
+                <h4>কল করুন</h4>
+                <strong>01714-216666</strong>
+              </a>
+              <a class="c-card" href="tel:+8801829984722" data-link="call2" data-reveal="up" style="--d: 0.05s">
+                <span class="c-card__ico"><i class="fas fa-mobile-screen"></i></span>
+                <h4>বিকল্প নম্বর</h4>
+                <strong>01829-984722</strong>
+              </a>
+              <a class="c-card c-card--wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.1s">
+                <span class="c-card__ico"><i class="fab fa-whatsapp"></i></span>
+                <h4>WhatsApp</h4>
+                <strong>চ্যাট করুন</strong>
+              </a>
+              <a class="c-card c-card--ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.15s">
+                <span class="c-card__ico"><i class="fab fa-facebook-messenger"></i></span>
+                <h4>মেসেঞ্জার</h4>
+                <strong>মেসেজ দিন</strong>
+              </a>
+              <a class="c-card c-card--fb" href="https://www.facebook.com/innovativeengbd" data-link="facebook" target="_blank" rel="noopener" data-reveal="up" style="--d: 0.2s">
+                <span class="c-card__ico"><i class="fab fa-facebook-f"></i></span>
+                <h4>ফেসবুক</h4>
+                <strong>আমাদের পেজ</strong>
+              </a>
+              <a class="c-card" href="mailto:palash_pe@yahoo.com" data-link="email" data-reveal="up" style="--d: 0.25s">
+                <span class="c-card__ico"><i class="fas fa-envelope"></i></span>
+                <h4>ইমেইল</h4>
+                <strong>palash_pe@yahoo.com</strong>
+              </a>
+              <div class="c-card c-card--wide" data-reveal="up" style="--d: 0.3s">
+                <span class="c-card__ico"><i class="fas fa-location-dot"></i></span>
+                <h4>প্রধান কার্যালয়</h4>
+                <address>বারিক বিল্ডিং, ১০ শেখ মুজিব রোড (২য় তলা), আগ্রাবাদ বা/এ, চট্টগ্রাম</address>
+              </div>
+              <div class="c-card c-card--wide" data-reveal="up" style="--d: 0.35s">
+                <span class="c-card__ico"><i class="fas fa-building"></i></span>
+                <h4>শাখা অফিস</h4>
+                <address>৬৩/১ ভিআইপি রোড, মালিবাগ, ঢাকা-১২১৭</address>
+              </div>
+            </div>
+
+            <div class="form-box" data-reveal="right">
+              <h3>আমাদের মেসেজ পাঠান</h3>
+              <p>ফর্মটি পূরণ করুন — আপনার মেসেজসহ WhatsApp খুলে যাবে।</p>
+              <div class="f-ok" id="formOk" role="status">
+                <i class="fas fa-circle-check"></i> ধন্যবাদ! WhatsApp-এ “Send” চাপুন, আমরা শীঘ্রই উত্তর দেব।
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="f-row">
+                  <div class="f-grp">
+                    <label for="fName">আপনার নাম <b>*</b></label>
+                    <div class="f-ctl"><i class="fas fa-user"></i><input id="fName" name="name" type="text" autocomplete="name" placeholder="পূর্ণ নাম" required /></div>
+                  </div>
+                  <div class="f-grp">
+                    <label for="fPhone">মোবাইল নম্বর <b>*</b></label>
+                    <div class="f-ctl">
+                      <i class="fas fa-phone"></i
+                      ><input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="01XXXXXXXXX" pattern="[0-9+\-\s]{11,16}" title="সঠিক মোবাইল নম্বর লিখুন, যেমন 01712345678" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="f-grp">
+                  <label for="fService">কী ধরনের সেবা চান</label>
+                  <div class="f-ctl">
+                    <i class="fas fa-list"></i>
+                    <select id="fService" name="service">
+                      <option value="">সেবা নির্বাচন করুন…</option>
+                      <option value="install">নতুন লিফট স্থাপন</option>
+                      <option value="escalator">এস্কেলেটর স্থাপন</option>
+                      <option value="repair">লিফট মেরামত ও সার্ভিসিং</option>
+                      <option value="amc">মাসিক রক্ষণাবেক্ষণ চুক্তি</option>
+                      <option value="parts">লিফটের যন্ত্রাংশ</option>
+                      <option value="diagnosis">সমস্যা নির্ণয় / কারিগরি সহায়তা</option>
+                      <option value="product">পণ্যের দাম জানতে</option>
+                      <option value="other">অন্যান্য</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="f-grp">
+                  <label for="fMsg">সংক্ষিপ্ত বার্তা <b>*</b></label>
+                  <div class="f-ctl"><i class="fas fa-message"></i><textarea id="fMsg" name="message" placeholder="আপনার প্রয়োজন সংক্ষেপে লিখুন…" required></textarea></div>
+                </div>
+                <button type="submit" class="btn btn--block"><i class="fab fa-whatsapp"></i> মেসেজ পাঠান</button>
+                <p class="f-note"><i class="fas fa-lock"></i> আপনার নম্বর শুধু উত্তর দেওয়ার জন্যই ব্যবহার করা হবে।</p>
+              </form>
+            </div>
+          </div>
+
+          <div class="map" data-reveal="up">
+            <iframe
+              title="ইনোভেটিভ ইঞ্জিনিয়ারিং প্রধান কার্যালয়ের মানচিত্র"
+              src="https://maps.google.com/maps?q=Barik%20Building%2C%20Sheikh%20Mujib%20Road%2C%20Agrabad%2C%20Chattogram&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="ftr">
+      <div class="container ftr__top">
+        <div>
+          <a href="#home" class="brand">
+            <img src="assets/images/logo/logo.png" alt="ইনোভেটিভ ইঞ্জিনিয়ারিং লোগো" width="52" height="52" loading="lazy" />
+            <span class="brand__txt"><strong>ইনোভেটিভ ইঞ্জিনিয়ারিং</strong><small>লিফট ও এস্কেলেটর সলিউশন</small></span>
+          </a>
+          <p>সারা বাংলাদেশে লিফট ও এস্কেলেটর স্থাপন, মেরামত, মাসিক রক্ষণাবেক্ষণ ও যন্ত্রাংশ সরবরাহ।</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/innovativeengbd" data-link="facebook" target="_blank" rel="noopener" aria-label="ফেসবুক"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" aria-label="মেসেঞ্জার"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:palash_pe@yahoo.com" data-link="email" aria-label="ইমেইল"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>দ্রুত লিংক</h4>
+          <ul class="ftr__links">
+            <li><a href="#about">আমাদের সম্পর্কে</a></li>
+            <li><a href="#services">আমাদের সেবাসমূহ</a></li>
+            <li><a href="#products">পণ্যের তালিকা</a></li>
+            <li><a href="#projects">আমাদের কাজসমূহ</a></li>
+            <li><a href="#maintenance">মাসিক সার্ভিসিং</a></li>
+            <li><a href="#contact">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>সেবাসমূহ</h4>
+          <ul class="ftr__links">
+            <li><a href="#services">নতুন লিফট স্থাপন</a></li>
+            <li><a href="#services">এস্কেলেটর স্থাপন</a></li>
+            <li><a href="#services">লিফট মেরামত</a></li>
+            <li><a href="#maintenance">মাসিক রক্ষণাবেক্ষণ</a></li>
+            <li><a href="#products">লিফটের যন্ত্রাংশ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>যোগাযোগ</h4>
+          <ul class="ftr__ci">
+            <li><i class="fas fa-location-dot"></i><span>বারিক বিল্ডিং, ১০ শেখ মুজিব রোড (২য় তলা), আগ্রাবাদ বা/এ, চট্টগ্রাম</span></li>
+            <li><i class="fas fa-building"></i><span>৬৩/১ ভিআইপি রোড, মালিবাগ, ঢাকা-১২১৭</span></li>
+            <li><i class="fas fa-phone"></i><span><a href="tel:+8801714216666" data-link="call">01714-216666</a>, <a href="tel:+8801829984722" data-link="call2">01829-984722</a></span></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:palash_pe@yahoo.com" data-link="email">palash_pe@yahoo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container ftr__bot">
+        <span>© <span data-year>2026</span> ইনোভেটিভ ইঞ্জিনিয়ারিং। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>লিফট ও এস্কেলেটরের সম্পূর্ণ সমাধান</span>
+      </div>
+    </footer>
+
+    <!-- Side floor navigator (desktop) -->
+    <nav class="floors" id="floors" aria-label="সেকশন নেভিগেটর">
+      <div class="floors__display" id="floorsDisplay">G</div>
+      <ol></ol>
+    </nav>
+
+    <!-- Floating contact (desktop) -->
+    <div class="fcta">
+      <a class="fcta__wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener" data-tip="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="fcta__ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener" data-tip="মেসেঞ্জার" aria-label="মেসেঞ্জার"><i class="fab fa-facebook-messenger"></i></a>
+      <a class="fcta__call" href="tel:+8801714216666" data-link="call" data-tip="01714-216666" aria-label="কল করুন"><i class="fas fa-phone"></i></a>
+      <button class="fcta__top" id="toTop" type="button" aria-label="উপরে যান"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <!-- Fixed bottom contact bar (mobile) -->
+    <nav class="mbar" aria-label="দ্রুত যোগাযোগ">
+      <a class="mbar__wa" href="https://wa.me/8801714216666" data-link="whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="mbar__ms" href="https://m.me/innovativeengbd" data-link="messenger" target="_blank" rel="noopener"><i class="fab fa-facebook-messenger"></i> মেসেঞ্জার</a>
+      <a class="mbar__call" href="tel:+8801714216666" data-link="call"><i class="fas fa-phone"></i> কল করুন</a>
+    </nav>
+
+    <!-- Detail modal (services & products) -->
+    <dialog class="modal" id="modal" aria-label="বিস্তারিত">
+      <button class="modal__x" id="modalX" type="button" aria-label="বন্ধ করুন"><i class="fas fa-xmark"></i></button>
+      <div id="modalBody" style="display: contents"></div>
+    </dialog>
+
+    <!-- Project lightbox -->
+    <dialog class="lightbox" id="lightbox" aria-label="প্রকল্পের ছবি">
+      <button class="modal__x" id="lbX" type="button" aria-label="বন্ধ করুন"><i class="fas fa-xmark"></i></button>
+      <figure>
+        <img src="" alt="" />
+        <figcaption><strong></strong><span></span></figcaption>
+      </figure>
+      <button class="lb-nav lb-nav--prev" id="lbPrev" type="button" aria-label="আগের ছবি"><i class="fas fa-chevron-left"></i></button>
+      <button class="lb-nav lb-nav--next" id="lbNext" type="button" aria-label="পরের ছবি"><i class="fas fa-chevron-right"></i></button>
+    </dialog>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
