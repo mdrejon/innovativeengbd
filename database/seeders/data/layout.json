@@ -1,0 +1,97 @@
+{
+    "layout_header": {
+        "phone": "01714-216666",
+        "email": "palash_pe@yahoo.com",
+        "location_notice": "Agrabad, Chattogram · Malibag, Dhaka",
+        "emergency_badge": "24/7 Emergency Service",
+        "cta_label": "Get a Quote",
+        "cta_url": "#contact"
+    },
+    "menu_primary": [
+        {
+            "label": "Home",
+            "url": "#home",
+            "icon": "fas fa-house"
+        },
+        {
+            "label": "About Us",
+            "url": "#about",
+            "icon": "fas fa-building"
+        },
+        {
+            "label": "Services",
+            "url": "#services",
+            "icon": "fas fa-screwdriver-wrench"
+        },
+        {
+            "label": "Products",
+            "url": "#products",
+            "icon": "fas fa-elevator"
+        },
+        {
+            "label": "Our Works",
+            "url": "#projects",
+            "icon": "fas fa-images"
+        },
+        {
+            "label": "Contact",
+            "url": "#contact",
+            "icon": "fas fa-phone"
+        }
+    ],
+    "social_links": [
+        {
+            "label": "Facebook",
+            "icon": "fab fa-facebook-f",
+            "url": "https://www.facebook.com/innovativeengbd"
+        },
+        {
+            "label": "Messenger",
+            "icon": "fab fa-facebook-messenger",
+            "url": "https://m.me/innovativeengbd"
+        },
+        {
+            "label": "WhatsApp",
+            "icon": "fab fa-whatsapp",
+            "url": "https://wa.me/8801714216666"
+        },
+        {
+            "label": "Email",
+            "icon": "fas fa-envelope",
+            "url": "mailto:palash_pe@yahoo.com"
+        }
+    ],
+    "menu_footer": [
+        {
+            "label": "About Us",
+            "url": "#about"
+        },
+        {
+            "label": "Services",
+            "url": "#services"
+        },
+        {
+            "label": "Products",
+            "url": "#products"
+        },
+        {
+            "label": "Our Works",
+            "url": "#projects"
+        },
+        {
+            "label": "Monthly Servicing",
+            "url": "#maintenance"
+        },
+        {
+            "label": "Contact",
+            "url": "#contact"
+        }
+    ],
+    "layout_footer": {
+        "intro": "Installation, repair, monthly maintenance and spare parts for lifts and escalators across Bangladesh.",
+        "head_office": "Barik Building, 10 Sk. Mujib Road (2nd Fl.), Agrabad C/A, Chattogram",
+        "branch_office": "63/1 VIP Road, Malibag, Dhaka-1217",
+        "copyright": "© 2026 Innovative Engineering. All rights reserved.",
+        "tagline": "Total Solution for Lifts & Escalators"
+    }
+}

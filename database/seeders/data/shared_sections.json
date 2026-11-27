@@ -1,0 +1,14 @@
+{
+    "shared-emergency": {
+        "type": "emergency_band",
+        "name": "24/7 Emergency Breakdown Callout",
+        "data": {
+            "title": "Lift stuck or not working?",
+            "description": "Our emergency team reaches you within 30 minutes — day or night, all year.",
+            "phone": "+8801714216666",
+            "phone_label": "01714-216666",
+            "whatsapp_url": "https://wa.me/8801714216666",
+            "whatsapp_label": "WhatsApp"
+        }
+    }
+}

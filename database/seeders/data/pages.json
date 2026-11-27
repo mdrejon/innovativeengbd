@@ -1,0 +1,310 @@
+[
+    {
+        "slug": "home",
+        "title": "Home",
+        "meta_title": "Innovative Engineering | Lift & Escalator Installation, Repair & Maintenance in Bangladesh",
+        "meta_description": "Innovative Engineering supplies, installs, repairs and maintains lifts and escalators in Bangladesh — passenger, home, hospital and cargo lifts, spare parts and monthly servicing contracts.",
+        "hero_background": null,
+        "sort_order": 0,
+        "sections": [
+            {
+                "type": "hero",
+                "name": "Hero Banner & Lift Display",
+                "data": {
+                    "anchor": "home",
+                    "floor": "G",
+                    "badge": "Total Lift & Escalator Solutions",
+                    "badge_icon": "fas fa-shield-halved",
+                    "title": "Safe, Smooth & Reliable",
+                    "title_highlight": "Lifts and Escalators",
+                    "rotator_prefix": "We",
+                    "rotator_words": [
+                        "install new lifts",
+                        "repair & service old lifts",
+                        "maintain lifts every month",
+                        "supply genuine spare parts",
+                        "install escalators"
+                    ],
+                    "rotator_suffix": "for homes, offices, hospitals and malls across Bangladesh.",
+                    "chips": [
+                        {"icon": "fas fa-elevator", "text": "New lift installation"},
+                        {"icon": "fas fa-screwdriver-wrench", "text": "Lift repair & servicing"},
+                        {"icon": "fas fa-calendar-check", "text": "Monthly maintenance"},
+                        {"icon": "fas fa-gears", "text": "Spare parts supply"}
+                    ],
+                    "buttons": [
+                        {"label": "Contact Us", "url": "#contact", "style": "btn", "icon": "fas fa-paper-plane"},
+                        {"label": "01714-216666", "url": "tel:+8801714216666", "style": "btn btn--ghost", "icon": "fas fa-phone"}
+                    ],
+                    "slides": [
+                        {"image": "assets/images/lift/hero-glass-lift.jpg"},
+                        {"image": "assets/images/lift/hero-lift-lobby.jpg"},
+                        {"image": "assets/images/lift/hero-escalator.jpg"}
+                    ],
+                    "stats": [
+                        {"icon": "fas fa-clock", "value": "24/7", "label": "Emergency service", "count": "", "suffix": ""},
+                        {"icon": "fas fa-bolt", "value": "30 min", "label": "Response time", "count": "30", "suffix": " min"},
+                        {"icon": "fas fa-elevator", "value": "100+", "label": "Lifts maintained", "count": "100", "suffix": "+"},
+                        {"icon": "fas fa-award", "value": "15+", "label": "Years of experience", "count": "15", "suffix": "+"}
+                    ]
+                }
+            },
+            {
+                "type": "about",
+                "name": "About Us Section",
+                "data": {
+                    "anchor": "about",
+                    "floor": "1",
+                    "floor_title": "01 About Us",
+                    "title": "Your Trusted Partner for",
+                    "title_highlight": "Lifts & Escalators",
+                    "description": "Innovative Engineering is a complete lift and escalator company. We sell and install new lifts, repair old ones, maintain them every month and supply spare parts — so building owners only need one trusted team.",
+                    "main_image": "assets/images/lift/lift-interior-classic.jpg",
+                    "sub_image": "assets/images/lift/lift-call-button.jpg",
+                    "exp_count": "15",
+                    "exp_suffix": "+",
+                    "exp_label": "Years of excellence",
+                    "points": [
+                        {
+                            "icon": "fas fa-user-gear",
+                            "title": "Skilled engineers & technicians",
+                            "description": "Experienced team that works on lifts of every brand and model."
+                        },
+                        {
+                            "icon": "fas fa-location-dot",
+                            "title": "Offices in Chattogram & Dhaka",
+                            "description": "Head office in Agrabad, Chattogram and branch office in Malibag, Dhaka."
+                        },
+                        {
+                            "icon": "fas fa-shield-halved",
+                            "title": "Safety first, always",
+                            "description": "Every mechanical, electrical and safety device is checked and recorded."
+                        }
+                    ],
+                    "button_label": "Our Services",
+                    "button_url": "#services",
+                    "call_label": "Call us any time",
+                    "call_number": "01714-216666"
+                }
+            },
+            {
+                "type": "services",
+                "name": "Our Services Grid",
+                "data": {
+                    "anchor": "services",
+                    "floor": "2",
+                    "floor_title": "02 Our Services",
+                    "title": "Everything Your Lift Needs,",
+                    "title_highlight": "Under One Roof",
+                    "subtitle": "From a brand-new installation to monthly care and emergency repair — we handle it all.",
+                    "items": [
+                        {
+                            "num": "01",
+                            "icon": "fas fa-elevator",
+                            "service_key": "install",
+                            "title": "New Lift Installation & Sales",
+                            "image": "assets/images/lift/lobby-modern.jpg",
+                            "description": "Supply and installation of new lifts for homes, apartments, offices, hospitals and factories."
+                        },
+                        {
+                            "num": "02",
+                            "icon": "fas fa-stairs",
+                            "service_key": "escalator",
+                            "title": "Escalator Installation & Sales",
+                            "image": "assets/images/lift/escalator-twin.jpg",
+                            "description": "Escalators for shopping malls, commercial complexes and public buildings."
+                        },
+                        {
+                            "num": "03",
+                            "icon": "fas fa-screwdriver-wrench",
+                            "service_key": "repair",
+                            "title": "Old Lift Repair & Servicing",
+                            "image": "assets/images/lift/roller-guide.jpg",
+                            "description": "Noisy, jerky or frequently stopping lift? We repair all brands and models."
+                        },
+                        {
+                            "num": "04",
+                            "icon": "fas fa-calendar-check",
+                            "service_key": "amc",
+                            "title": "Monthly Maintenance Contract",
+                            "image": "assets/images/lift/lift-car-panel.jpg",
+                            "description": "Fixed monthly visits, a full safety checklist and a written report — every month."
+                        },
+                        {
+                            "num": "05",
+                            "icon": "fas fa-gears",
+                            "service_key": "parts",
+                            "title": "Lift Spare Parts Supply",
+                            "image": "assets/images/lift/lift-buttons.jpg",
+                            "description": "Ready stock of control boards, door parts, ropes, buttons, displays and more."
+                        },
+                        {
+                            "num": "06",
+                            "icon": "fas fa-stethoscope",
+                            "service_key": "diagnosis",
+                            "title": "Fault Diagnosis & Technical Support",
+                            "image": "assets/images/lift/lift-doors-steel.jpg",
+                            "description": "Our engineers find the real cause of the problem and give clear solutions."
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "products",
+                "name": "Products Showcase",
+                "data": {
+                    "anchor": "products",
+                    "floor": "3",
+                    "floor_title": "03 Products",
+                    "title": "Lifts, Escalators &",
+                    "title_highlight": "Spare Parts",
+                    "subtitle": "Choose a category, then tap any product for details. Ask us for the price — we reply quickly.",
+                    "note": "No online payment needed — send us a message and we'll share the best price for your building."
+                }
+            },
+            {
+                "type": "projects",
+                "name": "Our Works & Gallery",
+                "data": {
+                    "anchor": "projects",
+                    "floor": "4",
+                    "floor_title": "04 Our Works",
+                    "title": "Lifts We Have",
+                    "title_highlight": "Installed & Serviced",
+                    "subtitle": "A look at buildings, homes and institutions where our team has installed and maintained lifts."
+                }
+            },
+            {
+                "type": "why_us",
+                "name": "Why Choose Us Section",
+                "data": {
+                    "anchor": "why",
+                    "floor": "5",
+                    "floor_title": "05 Why Choose Us",
+                    "title": "Why Building Owners",
+                    "title_highlight": "Choose Us",
+                    "subtitle": "Six reasons our customers trust us with their lifts — year after year.",
+                    "cards": [
+                        {
+                            "num": "01",
+                            "icon": "fas fa-user-gear",
+                            "title": "Experienced Technicians",
+                            "description": "Trained engineers who know every major lift brand inside out."
+                        },
+                        {
+                            "num": "02",
+                            "icon": "fas fa-award",
+                            "title": "Quality Lifts & Parts",
+                            "description": "Reliable lifts and genuine, tested spare parts — no shortcuts."
+                        },
+                        {
+                            "num": "03",
+                            "icon": "fas fa-calendar-check",
+                            "title": "Regular Maintenance",
+                            "description": "Monthly service plans that prevent breakdowns before they happen."
+                        },
+                        {
+                            "num": "04",
+                            "icon": "fas fa-bolt",
+                            "title": "Fast Service",
+                            "description": "On-site within 30 minutes of an emergency call — 24 hours, 365 days."
+                        },
+                        {
+                            "num": "05",
+                            "icon": "fas fa-handshake",
+                            "title": "After-Sales Support",
+                            "description": "We stay with you after installation with service, parts and advice."
+                        },
+                        {
+                            "num": "06",
+                            "icon": "fas fa-shield-heart",
+                            "title": "Safety & Satisfaction",
+                            "description": "Your passengers' safety and your peace of mind come first."
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "maintenance",
+                "name": "Monthly Servicing & AMC",
+                "data": {
+                    "anchor": "maintenance",
+                    "floor": "6",
+                    "floor_title": "06 Monthly Servicing",
+                    "title": "Already Have a Lift?",
+                    "title_highlight": "Let Us Take Care of It",
+                    "subtitle": "With a monthly servicing contract, our technicians visit on a fixed schedule, inspect every part and fix small issues before they turn into costly breakdowns.",
+                    "benefits": [
+                        {"icon": "fas fa-arrow-trend-down", "text": "Fewer breakdowns"},
+                        {"icon": "fas fa-shield-halved", "text": "Safer rides for everyone"},
+                        {"icon": "fas fa-hourglass-half", "text": "Longer lift life"},
+                        {"icon": "fas fa-truck-fast", "text": "Priority emergency response"},
+                        {"icon": "fas fa-file-lines", "text": "Written report every visit"},
+                        {"icon": "fas fa-wallet", "text": "Fixed, predictable monthly cost"}
+                    ],
+                    "plan_ribbon": "For any brand of lift",
+                    "plan_title": "Monthly Maintenance Contract",
+                    "plan_subtitle": "For apartments, offices, hospitals, factories and shopping malls.",
+                    "plan_features": [
+                        "Scheduled monthly visit by a trained technician",
+                        "30+-point inspection of the whole lift",
+                        "Cleaning, lubrication and adjustment",
+                        "Minor repairs and parts advice",
+                        "30-minute emergency response, 24/7",
+                        "Monthly service report"
+                    ],
+                    "steps_title": "How to start a contract",
+                    "steps": [
+                        {
+                            "icon": "fas fa-phone-volume",
+                            "title": "Contact us",
+                            "description": "Call, WhatsApp or send the form below."
+                        },
+                        {
+                            "icon": "fas fa-magnifying-glass",
+                            "title": "Free site inspection",
+                            "description": "Our engineer checks your lift's condition."
+                        },
+                        {
+                            "icon": "fas fa-file-signature",
+                            "title": "Sign the agreement",
+                            "description": "We agree the monthly fee and visit schedule."
+                        },
+                        {
+                            "icon": "fas fa-screwdriver-wrench",
+                            "title": "Regular servicing",
+                            "description": "Monthly visits, reports and emergency support."
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "emergency_band",
+                "name": "24/7 Emergency Breakdown Callout",
+                "data": {
+                    "title": "Lift stuck or not working?",
+                    "description": "Our emergency team reaches you within 30 minutes — day or night, all year.",
+                    "phone": "+8801714216666",
+                    "phone_label": "01714-216666",
+                    "whatsapp_url": "https://wa.me/8801714216666",
+                    "whatsapp_label": "WhatsApp"
+                }
+            },
+            {
+                "type": "contact",
+                "name": "Contact & Inquiry Form",
+                "data": {
+                    "anchor": "contact",
+                    "floor": "7",
+                    "floor_title": "07 Contact",
+                    "title": "Let's Talk About",
+                    "title_highlight": "Your Lift",
+                    "subtitle": "Ask for a price, book a site inspection or report a problem — we usually reply within minutes.",
+                    "form_title": "Send Us a Message",
+                    "form_subtitle": "Fill in the form — we record your inquiry and get in touch immediately.",
+                    "map_iframe_url": "https://maps.google.com/maps?q=Barik%20Building%2C%20Sheikh%20Mujib%20Road%2C%20Agrabad%2C%20Chattogram&z=16&output=embed"
+                }
+            }
+        ]
+    }
+]
